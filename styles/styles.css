@@ -1,3 +1,10 @@
+
+h1{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+    
+}
+
 * {
-    background-color: purple;
+    background-color: #5BCEFA;
+    font-family:Georgia, 'Times New Roman', Times, serif
 }
