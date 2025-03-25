@@ -10,3 +10,13 @@ h1{
     background-color: #0B91BA;
     font-family:Georgia, 'Times New Roman', Times, serif
 }
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+#header-logo {
+    width: 10em;
+}
