@@ -1,6 +1,6 @@
 
 h1{
-    font-family: 'arya-double', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+    font-family: 'arya-double', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-style: normal;
     font-weight: 400;
 
@@ -9,4 +9,10 @@ h1{
 * {
     background-color: #0B91BA;
     font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+h2{ 
+    font-family: 'apparat-thin', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: normal;
+    font-weight: 400;
 }
