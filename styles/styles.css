@@ -60,6 +60,7 @@ nav ul {
         text-decoration: none;
         color: rgb(215, 235, 250);
     }
+    
 }
 
 #header-logo {
@@ -112,4 +113,9 @@ footer {
         margin: 0;
     }
 
+}
+
+nav ul li a:hover {
+    color: #0078D7; 
+    font-size: 20px;
 }
