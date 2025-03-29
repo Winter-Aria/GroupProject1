@@ -73,11 +73,14 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: rgb(215, 227, 236);
+    gap: 1em;
     a {
         text-decoration: none;
         color: rgb(215, 227, 236);
     }
-    section {
-        width: fit-content;
+    ul {
+        list-style: none;
+        padding: 0;
     }
 }
