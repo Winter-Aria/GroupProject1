@@ -22,24 +22,32 @@ h2{
 
 .JobSection {
     display: flex;
-    align-items: flex-start; /* Aligns text to the top */
-    justify-content: space-between; /* Text on one side, image on the other */
+    align-items: flex-start;
+    justify-content: space-between; 
     gap: 20px;
     padding: 20px;
 }
 
 .JobSpan {
     display: flex;
-    flex-direction: column; /* Stacks text vertically */
-    max-width: 60%; /* Prevents text from stretching too wide */
+    flex-direction: column; 
+    max-width: 60%; 
 }
 
 .JobImage {
-    width: 40%;
-    max-width: 300px;
+    width: 50%;
     height: auto;
     object-fit: cover;
+    margin-top: 150px; 
+    padding-right: 10px; 
 }
+
+.JobTitle {
+    text-align: center; 
+    width: 100%; 
+    margin: 0 auto;
+    font-size: 2em;
+ }
 
 header {
     padding: 8px;
