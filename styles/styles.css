@@ -115,7 +115,17 @@ footer {
 
 }
 
-nav ul li a:hover {
-    color: #0078D7; 
-    font-size: 20px;
+@keyframes larger {
+    to {
+        transform: scale(1, 1.1);
+    }
+}
+
+nav ul li {
+    transition-property: color;
+    transition-duration: 1s;
+}
+nav ul li:hover {
+    color: #0078D7;
+    animation: larger 1s;
 }
