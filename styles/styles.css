@@ -66,3 +66,18 @@ nav ul {
     width: 10em;
     margin-bottom: -0.2em; /* center image around main text (looks better) */
 }
+
+footer {
+    background-color: rgb(52, 33, 46);
+    padding: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    a {
+        text-decoration: none;
+        color: rgb(215, 227, 236);
+    }
+    section {
+        width: fit-content;
+    }
+}
