@@ -16,3 +16,23 @@ h2{
     font-style: normal;
     font-weight: 400;
 }
+.JobSection {
+    display: flex;
+    align-items: flex-start; /* Aligns text to the top */
+    justify-content: space-between; /* Text on one side, image on the other */
+    gap: 20px;
+    padding: 20px;
+}
+
+.JobSpan {
+    display: flex;
+    flex-direction: column; /* Stacks text vertically */
+    max-width: 60%; /* Prevents text from stretching too wide */
+}
+
+.JobImage {
+    width: 40%;
+    max-width: 300px;
+    height: auto;
+    object-fit: cover;
+}
