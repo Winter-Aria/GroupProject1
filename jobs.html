@@ -8,23 +8,26 @@
 </head>
 <body>
     <header>
+        <img src="images/Logo.png" id="header-logo" alt="Noctilia IT Solutions Logo">
         <nav>
-            <a href="index.html">Home</a> |
-            <a href="services.html">Our Services</a> |
-            <a href="jobs.html">Careers</a> |
-            <a href="apply.html">Join Our Team</a> |
-            <a href="about.html">About Us</a> |
-            <a href="contact.html">Contact Us</a> |
-            <a href="info@companyname.com.au">Send Us An Email</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Our Services</a></li>
+                <li><a href="jobs.html">Careers</a></li>
+                <li><a href="apply.html">Join Our Team</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a> </li>
+                <li><a href="info@companyname.com.au">Send Us An Email</a></li>
+            </ul>
         </nav>
-        
     </header>
     <main>
         <h1>Our Careers</h1>
         <ul>
             <li>
-                <section>
-                    <h2>Network Engineer</h2>
+                <section class="JobSection">
+                    <span class="JobSpan">
+                    <h2 class="JobTitle">Network Engineer</h2>
                     <p>Reference Number: <strong>A113</strong></p>
                     <p>Position Title: <strong>Network Engineer</strong></p>
                     <p>We are looking for a passionate <strong>Network Engineer</strong> to join our growing team.</p>
@@ -62,39 +65,131 @@
                         
                         
                     </ol>
-                    <img src = "Images\NetworksRack.jpeg",id="JobImage" , alt = "person typing at desk", width="800" height="600">
+                    </span>
+                    <img src = "Images\NetworksRack.jpeg", class= "JobImage", id="networkImage" , alt = "person typing at desk">
                 </section>
+                <hr>
             </li>
             
             <li>
-                <section>
-                    <h2>Job Position 2</h2>
-                    <p>Reference Number: <strong>XXXXX</strong></p>
-                    <p>Position Title: <strong>JOB2</strong></p>
-                    <p>Brief Description: </p>
-                    <p>Salary Range:1000-10000</p>
-                    <p>Reports To: x</p>
-                    
+                <section class="JobSection">
+                    <span class="JobSpan">
+                    <h2 class="JobTitle">Software Developer</h2>
+                    <p>Reference Number: <strong>B232</strong></p>
+                    <p>Position Title: <strong>Softare Developr</strong></p>
+                    <p>We are looking for a dedicated <strong>Software Developer</strong> to join our dynamic team.</p>
+                    <p>You will be responsible for designing, developing, and maintaining software applications, ensuring high performance, scalability, and reliability.</p>
+                    <p>Salary Range: 90,000-110,000</p>
+                    <p>Reports To: Lead Software Engineer</p>
                     <h3>Key Responsibilities</h3>
                     <ul>
-                        <li> responsibility 1</li>
-                        <li> responsibility 2</li>
+                        <li>Develop, test, and maintain software applications following best practices.</li>
+                        <li>Collaborate with cross-functional teams to define, design, and implement new features.</li>
+                        <li>Debug and resolve technical issues to improve application performance.</li>
+                        <li>Write clean, maintainable, and efficient code following industry standards.</li>
+                        <li>Stay updated with emerging technologies to enhance development processes.</li>
                     </ul>
-                    
-                    <h3>Required Qualifications</h3>
+                
+                    <h3>Qualifications</h3>
                     <h4>Essential</h4>
                     <ol>
-                        <li>ESSENTIAL1</li>
-                        <li>Essential2</li>
+                        <li>Bachelor's degree in Computer Science, Software Engineering, or a related field.</li>
+                        <li>Proficiency in at least one programming language (e.g., Python, Java, C#, JavaScript).</li>
+                    </ol>
+                    
+                    <h4>Preferable</h4>
+                    <ol>
+                        <li>Experience with frameworks and tools such as:
+                            <ul>
+                                <li>React, Angular, or Vue.js (for frontend development)</li>
+                                <li>.NET, Spring Boot, or Django (for backend development)</li>
+                                <li>SQL and NoSQL databases (e.g., PostgreSQL, MongoDB)</li>
+                            </ul>
+                        </li>
+                        <li>2+ years of hands-on experience in software development.</li>
+                        <li>Knowledge of cloud platforms like AWS, Azure, or Google Cloud.</li>
+                        <li>Familiarity with DevOps practices and CI/CD pipelines.</li>
+                    </ol>
+                </span>
+                    <img src = "Images\WomanAtComputer.jpeg", class ="JobImage", id="softwareDevImage" alt = "person typing at desk">
+                </section>
+                <hr>
+            </li>
+
+
+            <li>
+                <section class="JobSection">
+                    <span class="JobSpan">
+                    <h2 class="JobTitle">IT Support Specialist</h2>
+                    <p>Reference Number: <strong>D1337</strong></p>
+                    <p>Position Title: <strong>IT Support Specialist</strong></p>
+                    <p>We are looking for a dedicated <strong>IT Support Specialist</strong> to provide technical assistance to clients as well as company administration and staff</p>
+                    <p>Salary Range: 70,000-90,000</p>
+                    <p>Reports To: IT Manager</p>
+                    <h3>Key Responsibilities</h3>
+                    <ul>
+                        <li>Provide technical support for desktops, laptops, and mobile devices.</li>
+                        <li>Install and configure software, operating systems, and peripherals.</li>
+                        <li>Troubleshoot network connectivity and system performance issues.</li>
+                        <li>Maintain IT inventory and ensure timely updates for hardware/software.</li>
+                        <li>Train employees on IT security policies and best practices.</li>
+                        <li>Resolve client IT support tickets</li>
+                    </ul>
+                    <h3>Qualifications</h3>
+                    <h4>Essential</h4>
+                    <ol>
+                        <li>Associate's or Bachelor’s degree in IT, Computer Science, or a related field.</li>
+                        <li>Experience with Windows and macOS environments.</li>
                     </ol>
                     <h4>Preferable</h4>
                     <ol>
-                        <li>prefarable1</li>
-                        <li>preferable2</li>
+                        <li>CompTIA A+ or ITIL certification.</li>
+                        <li>Familiarity with Office 365 administration.</li>
+                        <li>1-2 years of experience in IT support or help desk roles.</li>
                     </ol>
-                    <img src = "Images\WomanAtComputer.jpeg", id ="JobImage", alt = "person typing at desk", width="800" height="600">
+                    </span>
+                    <img src="Images/ITSupport.jpeg" class="JobImage" id="itSupportImage" alt="IT support specialist assisting an employee">
                 </section>
+                <hr>
             </li>
+
+            <li>
+                <section class="JobSection">
+                    <span class="JobSpan">
+                    <h2 class="JobTitle">Human Resources Coordinator</h2>
+                    <p>Reference Number: <strong>E451</strong></p>
+                    <p>Position Title: <strong>Human Resources Coordinator</strong></p>
+                    <p>We are seeking a **Human Resources Coordinator** to support our HR operations, ensuring a smooth experience for employees and candidates.</p>
+                    <p>Salary Range: 75,000-95,000</p>
+                    <p>Reports To: HR Manager</p>
+                    <h3>Key Responsibilities</h3>
+                    <ul>
+                        <li>Assist in recruitment efforts, including job postings, resume screening, and interview coordination.</li>
+                        <li>Facilitate onboarding and training programs for new hires.</li>
+                        <li>Maintain employee records and ensure compliance with HR policies and labor laws.</li>
+                        <li>Support performance management processes and employee engagement initiatives.</li>
+                        <li>Assist in conflict resolution and serve as a point of contact for HR-related inquiries.</li>
+                    </ul>
+                    <h3>Qualifications</h3>
+                    <h4>Essential</h4>
+                    <ol>
+                        <li>Bachelor's degree in Human Resources, Business Administration, or a related field.</li>
+                        <li>Strong organizational and communication skills.</li>
+                    </ol>
+                    <h4>Preferable</h4>
+                    <ol>
+                        <li>HR certification (e.g., SHRM-CP, PHR).</li>
+                        <li>Experience with HR software and applicant tracking systems (ATS).</li>
+                        <li>1-2 years of experience in HR or a related administrative role.</li>
+                    </ol>
+                    </span>
+                    <img src="Images/HRImage.jpeg" class="JobImage" id="HRImage" alt="HR coordinator working with employees">
+                </section>
+                
+            </li>
+
+
+
         </ul>
         
         <aside>
@@ -104,8 +199,13 @@
     </main>
     
     <footer>
-        <p>&copy; 2025 Company Name. All rights reserved.</p>
-        <a href="companyname@gmail.com.au">Email</a>
+        <h2>Visit Our</h2>
+        <ul>
+            <li><a href="https://ariamakesgames.atlassian.net/jira/software/projects/GP1WT/summary">Jira</a></li>
+            <li><a href="https://github.com/Winter-Aria/GroupProject1">Github</a></li>
+           
+        </ul>
+        <p class="Copyright">&copy; 2025 Noctila IT Solutions. All rights reserved.</p>
     </footer>
 </body>
 </html>
