@@ -123,7 +123,17 @@ footer {
 
 }
 
-nav ul li a:hover {
-    color: #0078D7; 
-    font-size: 20px;
+nav ul {
+    li {
+        transition: transform 0.2s;
+        a {
+            transition: color 0.2s;
+        }
+    }
+    li:hover {
+        a {
+            color: #0078D7;
+        }
+        transform: scale(1.1);
+    }
 }
