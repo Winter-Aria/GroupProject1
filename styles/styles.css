@@ -73,7 +73,7 @@ nav ul {
 
 #header-logo {
     width: 10em;
-    margin-bottom: -0.2em; /* center image around main text (looks better) */
+    margin-bottom: 0em; /* center image around main text (looks better) */
 }
 
 footer {
