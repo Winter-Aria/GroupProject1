@@ -1,0 +1,28 @@
+#cookies_allowed:checked ~ #cookie_prompt {
+   display: none;
+}
+
+#cookie_prompt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 5;
+    div {
+        display: flex;
+        flex-direction: column;
+        background-color: pink;
+        padding: 30px;
+        div {
+            gap: 20px;
+            display: flex;
+            justify-content: space-between;
+            label {
+                background-color: gray;
+                padding: 10px;
+            }
+        }
+    }
+}

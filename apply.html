@@ -7,9 +7,27 @@
      <meta name="keywords" content="HTML, Doctype, Head, Body, Meta, Paragraph, Headings, Strong, Emphasis">
      <meta name="author" content="Noah Munro">
      <link rel="stylesheet" href="styles/styles.css">
+     <link rel="stylesheet" href="styles/popup.css">
      <title>Job Form</title>
 </head>
 <body>
+    <input type="checkbox" aria-hidden="true" hidden id="cookies_allowed">
+    <input type="checkbox" aria-hidden="true" hidden id="cookies_denied">
+
+    <div aria-hidden="true" id="cookie_prompt">
+        <div>
+            <h2>Allow Cookies?</h2>
+            <div>
+                <label for="cookies_allowed">
+                    allow
+                </label>
+                <label for="cookies_denied">
+                    deny
+                </label>
+            </div>
+        </div>
+    </div>
+
     <header>
         <img src="images/Logo.png" id="header-logo" alt="Noctilia IT Solutions Logo">
         <nav>
