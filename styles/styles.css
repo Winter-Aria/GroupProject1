@@ -1,5 +1,5 @@
 body {
-    background-color:#E9E3FF;
+    background-color:#e6dffc;
     margin: 0px;
 }
 
@@ -8,12 +8,11 @@ main{
     margin:auto;
     background-color: #eeeafc;
 }
-
 h1{
     font-family: 'arya-double', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-style: normal;
     font-weight: 400;
-    color: #FFADDC;
+    color: #201E23;
 }
 
 * {
@@ -85,11 +84,9 @@ nav ul {
 
 footer {
     position:relative;
-    background-color: rgb(52, 33, 46);
+    background-color: #251927;
     color: #D7EBFA;
     padding: 2em;
-    color:#D7EBFA;
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
