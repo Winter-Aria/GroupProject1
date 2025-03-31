@@ -80,7 +80,9 @@ nav ul {
 footer {
     position:relative;
     background-color: rgb(52, 33, 46);
+    color: #D7EBFA;
     padding: 2em;
+    color:#D7EBFA;
     position: relative;
     display: flex;
     align-items: center;
@@ -88,15 +90,20 @@ footer {
     gap: 1em;
     a {
         text-decoration: none;
+        color:#D7EBFA
     }
     ul {
         list-style: none;
         padding: 0;
     }
+    p {
+        color:#D7EBFA;
+    }
+    h2 {
+        color:#D7EBFA;
+    }
 }
-footer a, p, h2 {
-    color:#D7EBFA;
-}
+
 
 .Copyright {
     position: absolute; 
