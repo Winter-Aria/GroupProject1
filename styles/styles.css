@@ -138,3 +138,7 @@ nav ul {
         transform: scale(1.1);
     }
 }
+
+#footer-logo {
+    float: left;
+}
