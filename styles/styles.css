@@ -3,6 +3,12 @@ body {
     margin: 0px;
 }
 
+main{
+    width:50%;
+    margin:auto;
+    background-color: #eeeafc;
+}
+
 h1{
     font-family: 'arya-double', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-style: normal;
