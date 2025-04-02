@@ -1,24 +1,37 @@
+:root {
+    /* Header and Footer text colour*/
+    --lightblue: #D7EBFA;
+    /* Hover text colour */
+    --hoverblue: #0078D7;
+    /* Main text and header background colour */
+    --dark1: #201E23;
+    /* Footer background colour */
+    --dark2: #251927;
+    /* Main background colour */
+    --pink1: #EEEAFC;
+    /* Body background colour */
+    --pink2: #E6DFFC;
+}
 body {
-    background-color:#E9E3FF;
+    background-color:var(--pink2);
     margin: 0px;
 }
 
 main{
     width:50%;
     margin:auto;
-    background-color: #eeeafc;
+    background-color: var(--pink1);
 }
-
 h1{
     font-family: 'arya-double', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-style: normal;
     font-weight: 400;
-    color: #FFADDC;
+    color: var(--dark1);
 }
 
 * {
     font-family:Georgia, 'Times New Roman', Times, serif;
-    color: #201E23;
+    color: var(--dark1);
 }
 
 h2{ 
@@ -58,11 +71,11 @@ h2{
 
 header {
     padding: 8px;
-    background-color: #201E23;
+    background-color: var(--dark1);
     display: flex;
     align-items: center;
     column-gap: 1em;
-    box-shadow: 0px 0px 2px 1px #201e23;
+    box-shadow: 0px 0px 2px 1px var(--dark1);
 }
 
 nav ul {
@@ -73,7 +86,7 @@ nav ul {
     flex-direction: row;
     a {
         text-decoration: none;
-        color: rgb(215, 235, 250);
+        color: var(--lightblue);
     }
     
 }
@@ -85,18 +98,16 @@ nav ul {
 
 footer {
     position:relative;
-    background-color: rgb(52, 33, 46);
+    background-color: var(--dark2);
     color: #D7EBFA;
     padding: 2em;
-    color:#D7EBFA;
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1em;
     a {
         text-decoration: none;
-        color:#D7EBFA
+        color:var(--lightblue);
     }
     ul {
         list-style: none;
@@ -130,7 +141,7 @@ footer {
     display: flex;
     justify-content: space-between;
     a {
-        color: rgb(126, 90, 114);
+        color: #7e5a72;
     }
     p {
         margin: 0;
@@ -147,12 +158,8 @@ nav ul {
     }
     li:hover {
         a {
-            color: #0078D7;
+            color: var(--hoverblue);
         }
         transform: scale(1.1);
     }
-}
-
-#footer-logo {
-    
 }
