@@ -12,7 +12,6 @@
     /* Body background colour */
     --pink2: #E6DFFC;
 }
-
 body {
     background-color:var(--pink2);
     margin: 0px;
@@ -23,21 +22,20 @@ main{
     margin:auto;
     background-color: var(--pink1);
 }
-
 h1{
-    font-family: 'arya-double', Helvetica, sans-serif;
+    font-family: 'arya-double', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-style: normal;
     font-weight: 400;
     color: var(--dark1);
 }
 
 * {
-    font-family:'myriad-pro-light', Tahoma, sans-serif;
+    font-family:Georgia, 'Times New Roman', Times, serif;
     color: var(--dark1);
 }
 
 h2{ 
-    font-family: 'apparat-thin', Verdana, sans-serif;
+    font-family: 'apparat-thin', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-style: normal;
     font-weight: 400;
 }
@@ -93,20 +91,9 @@ nav ul {
     
 }
 
-#navbar {
-    font-family: 'apparat-thin', Verdana, sans-serif;
-    font-style: normal;
-    font-weight: 400;
-}
-
-
 #header-logo {
     width: 10em;
     margin-bottom: 0em; /* center image around main text (looks better) */
-}
-
-#customer-name {
-    font-style: italic;
 }
 
 footer {
@@ -114,8 +101,6 @@ footer {
     background-color: var(--dark2);
     color: #D7EBFA;
     padding: 2em;
-    color:#D7EBFA;
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -178,7 +163,6 @@ nav ul {
         transform: scale(1.1);
     }
 }
-
-#footer-logo {
-    
+main nav a{
+    color:#251927
 }
