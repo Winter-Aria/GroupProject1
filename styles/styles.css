@@ -91,6 +91,14 @@ nav ul {
     
 }
 
+#navbar {
+    font-family: 'apparat-thin', Verdana, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: large;
+}
+
+
 #header-logo {
     width: 10em;
     margin-bottom: 0em; /* center image around main text (looks better) */
