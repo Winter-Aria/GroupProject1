@@ -98,6 +98,10 @@ nav ul {
     margin-bottom: 0em; /* center image around main text (looks better) */
 }
 
+#customer-name {
+    font-style: italic;
+}
+
 footer {
     position:relative;
     background-color: var(--dark2);
