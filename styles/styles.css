@@ -86,9 +86,6 @@ nav ul {
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    font-family: 'apparat-thin', Verdana, sans-serif;
-    font-style: normal;
-    font-weight: 400;
     a {
         text-decoration: none;
         color: var(--lightblue);
@@ -96,11 +93,12 @@ nav ul {
     
 }
 
-.nav-list a {
+#navbar {
     font-family: 'apparat-thin', Verdana, sans-serif;
     font-style: normal;
     font-weight: 400;
 }
+
 
 #header-logo {
     width: 10em;
