@@ -60,6 +60,7 @@
                         id="firstname" 
                         maxlength="20" 
                         pattern="[A-Za-z]+" 
+                        placeholder="First Name"
                         required></td>
                     <td><input 
                         type="text" 
@@ -67,13 +68,18 @@
                         id="lastname" 
                         maxlength="20" 
                         pattern="[A-Za-z]+"
+                        placeholder="Last Name"
                         required></td>
                 </tr>
                 <tr>
                     <td><label for="dob">Date of Birth</label></td>
                 </tr>
                 <tr>
-                    <td><input type="date" name="dob" id="dob" required></td>
+                    <td><input 
+                        type="date" 
+                        name="dob" 
+                        id="dob" 
+                        required></td>
                 </tr>
             </tbody>
             </table>
@@ -88,8 +94,20 @@
                     <td><label for="suburb">Suburb</label></td>
                 </tr>
                 <tr>
-                    <td><input type="text" name="address" id="address" maxlength="40" required></td>
-                    <td><input type="text" name="suburb" id="suburb" maxlength="40" required></td>
+                    <td><input 
+                        type="text" 
+                        name="address" 
+                        id="address" 
+                        maxlength="40" 
+                        placeholder="Street Address"
+                        required></td>
+                    <td><input 
+                        type="text" 
+                        name="suburb" 
+                        id="suburb" 
+                        maxlength="40" 
+                        placeholder="Suburb"
+                        required></td>
                 </tr>
                 <tr>
                     <td><label for="state">State</label></td>
@@ -107,7 +125,14 @@
                         <option value="TAS">TAS</option>
                         <option value="ACT">ACT</option>
                     </select></td>
-                    <td><input type="text" name="postcode" id="postcode" maxlength="4" pattern="\d{4}" required></td>
+                    <td><input 
+                        type="text" 
+                        name="postcode" 
+                        id="postcode" 
+                        maxlength="4" 
+                        pattern="\d{4}" 
+                        placeholder="Postcode e.g. 0000"
+                        required></td>
                 </tr>
             </tbody>
             </table>
@@ -123,12 +148,18 @@
                 </tr>
                 <tr>
                     <!-- ADD Patterns -->
-                    <td><input type="email" name="email" id="email" required></td>
+                    <td><input 
+                        ype="email" 
+                        name="email" 
+                        id="email" 
+                        placeholder="Email@Address"
+                        required></td>
                     <td><input 
                         type="tel" 
                         name="phone" 
                         id="phone" 
                         pattern="(((\+61\s?)|0)?((\d{3})\s?){3})|(\d{4}\s?\d{4})"
+                        placeholder="+61 000 000 000"
                         required></td>
                 </tr>
             </tbody>
@@ -147,7 +178,7 @@
             <br>
             <label for="otherskills">Other Skills</label>
             <br>
-            <textarea id="otherskills" name="otherskills" rows="5", cols="30"></textarea>
+            <textarea id="otherskills" name="otherskills" rows="5" cols="30" placeholder="Provide any other skills here"></textarea>
         
         </fieldset>
         <!-- Form Submit and reset area -->
