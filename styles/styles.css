@@ -174,3 +174,11 @@ nav ul {
 main nav a{
     color:#251927
 }
+input {
+    background-color: var(--pink1);
+    border-color: var(--pink2);
+}
+select {
+    background-color: var(--pink1);
+    border-color: var(--pink2);
+}
