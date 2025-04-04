@@ -14,6 +14,7 @@
         <a href="index.html">
             <img src="images/Logo.png" id="header-logo" alt="Noctilia IT Solutions Logo">
         </a>
+        <!-- Naviation bar / Top Menu -->
         <nav class="navbar">
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -28,16 +29,17 @@
     </header>
 
     <main>
-    <!-- Job application forb initiator -->
+    <!-- Job application form initiator -->
     <form method="post" action="http://mercury.swin.edu.au/it000000/formtest.php">
         <fieldset id="job_reference_number">
             <!-- Job Reference Number Dropdown selection section -->
             <legend>Job Reference Number</legend>
                 <label for="job_reference">Select Reference Number</label>
                 <br>
+                <!-- Job Reference Number -->
                 <select name="job_reference" id="job_reference" required>
                     <option value="" id="select_defult" selected disabled>Please Select Reference Number</option>
-                    <!-- ADD JOB REFERENCE NUMBERS HERE -->
+                    <!-- Job Refference Numbers-->
                     <option value="[A113]">A113</option>
                     <option value="[B232]">B232</option>
                     <option value="[D1337]">D1337</option>
@@ -54,6 +56,7 @@
                     <td><label for="lastname">Last Name</label></td>
                 </tr>
                 <tr>
+                    <!-- First Name -->
                     <td><input 
                         type="text" 
                         name="firstname" 
@@ -62,6 +65,7 @@
                         pattern="[A-Za-z]+" 
                         placeholder="First Name"
                         required></td>
+                    <!-- Last Name -->
                     <td><input 
                         type="text" 
                         name="lastname" 
@@ -75,6 +79,7 @@
                     <td><label for="dob">Date of Birth</label></td>
                 </tr>
                 <tr>
+                    <!-- Date of Birth -->
                     <td><input 
                         type="date" 
                         name="dob" 
@@ -94,13 +99,15 @@
                     <td><label for="suburb">Suburb</label></td>
                 </tr>
                 <tr>
-                    <td><input 
+                    <!-- Street Address -->
+                    <td><input
                         type="text" 
                         name="address" 
                         id="address" 
                         maxlength="40" 
                         placeholder="Street Address"
                         required></td>
+                    <!-- Suburb -->
                     <td><input 
                         type="text" 
                         name="suburb" 
@@ -114,6 +121,7 @@
                     <td><label for="postcode">Postcode</label></td>
                 </tr>
                 <tr>
+                    <!-- State -->
                     <td><select name="state" id="state" required>
                         <option value="" id="select_defult"selected disabled>Select State</option>
                         <option value="VIC">VIC</option>
@@ -125,6 +133,7 @@
                         <option value="TAS">TAS</option>
                         <option value="ACT">ACT</option>
                     </select></td>
+                    <!-- Postcode -->
                     <td><input 
                         type="text" 
                         name="postcode" 
@@ -147,13 +156,14 @@
                     <td><label for="phone">Phone Number</label></td>
                 </tr>
                 <tr>
-                    <!-- ADD Patterns -->
+                    <!-- Email Address -->
                     <td><input 
                         ype="email" 
                         name="email" 
                         id="email" 
                         placeholder="Email@Address"
                         required></td>
+                    <!-- Phone Number -->
                     <td><input 
                         type="text" 
                         name="phone" 
@@ -178,6 +188,7 @@
             <br>
             <label for="otherskills">Other Skills</label>
             <br>
+            <!-- Text Area for additional Skills -->
             <textarea id="otherskills" name="otherskills" rows="5" cols="30" placeholder="Provide any other skills here"></textarea>
         
         </fieldset>
@@ -186,17 +197,16 @@
         <input type="submit" id="submit" value="Apply"/>
     </form>
     </main>
-
-
     <footer>
         <h2>Visit Our</h2>
         <ul>
+            <!-- Link to Jira -->
             <li><a href="https://ariamakesgames.atlassian.net/jira/software/projects/GP1WT/summary">Jira</a></li>
+            <!-- Link to Github -->
             <li><a href="https://github.com/Winter-Aria/GroupProject1">Github</a></li>
            
         </ul>
         <p class="Copyright">&copy; 2025 Noctila IT Solutions. All rights reserved.</p>
     </footer>
 </body>
-
 </html>
