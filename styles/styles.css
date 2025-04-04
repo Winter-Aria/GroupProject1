@@ -182,3 +182,8 @@ select {
     background-color: var(--pink1);
     border-color: var(--pink2);
 }
+#submit {
+    background-color: var(--dark1);
+    border-color: var(--dark1);
+    color: var(--lightblue);
+}
