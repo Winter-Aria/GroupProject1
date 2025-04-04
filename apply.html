@@ -124,7 +124,12 @@
                 <tr>
                     <!-- ADD Patterns -->
                     <td><input type="email" name="email" id="email" required></td>
-                    <td><input type="text" name="phone" id="phone" required></td>
+                    <td><input 
+                        type="tel" 
+                        name="phone" 
+                        id="phone" 
+                        pattern="(((\+61\s?)|0)?((\d{3})\s?){3})|(\d{4}\s?\d{4})"
+                        required></td>
                 </tr>
             </tbody>
             </table>
@@ -135,7 +140,7 @@
             <p>Required Technical Skills</p>
             <!-- ADD SKILLS -->
             <label for="Skill1">Skill1</label>
-            <input type="checkbox" id="skill1" name="skills[]" value="skill1">
+            <input type="checkbox" id="skill1" name="skills[]" value="skill1" required>
             <br>
             <label for="Skill2">Skill2</label>
             <input type="checkbox" id="skill2" name="skills[]" value="skill2">
