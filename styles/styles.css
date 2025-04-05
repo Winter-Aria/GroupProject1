@@ -21,6 +21,7 @@ main{
     width:50%;
     margin:auto;
     background-color: var(--pink1);
+    padding: 1em;
 }
 h1{
     font-family: 'arya-double', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -76,6 +77,7 @@ header {
     align-items: center;
     column-gap: 1em;
     box-shadow: 0px 0px 2px 1px var(--dark1);
+    position: relative; /* makes box shadow render properly */
 }
 
 nav ul {
@@ -88,7 +90,9 @@ nav ul {
         text-decoration: none;
         color: var(--lightblue);
     }
-    
+    li {
+        padding: 5px 0 5px 0;
+    }
 }
 
 #navbar {
