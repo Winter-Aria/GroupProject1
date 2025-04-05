@@ -28,6 +28,7 @@ main{
     background-color: var(--pink1);
     padding: 1em;
 }
+
 h1{
     font-family: 'arya-double', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-style: normal;
@@ -195,4 +196,9 @@ select {
     background-color: var(--dark1);
     border-color: var(--dark1);
     color: var(--lightblue);
+}
+
+video {
+    width: -webkit-fill-available;
+    height: auto;
 }
