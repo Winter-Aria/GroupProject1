@@ -35,7 +35,6 @@
             <!-- Job Reference Number Dropdown selection section -->
             <legend>Job Reference Number</legend>
                 <label for="job_reference">Select Reference Number</label>
-                <br>
                 <!-- Job Reference Number -->
                 <select name="job_reference" id="job_reference" required>
                     <option value="" id="select_defult" selected disabled>Please Select Reference Number</option>
@@ -49,148 +48,112 @@
         <fieldset>
             <!-- Aplicant personal details section -->
             <legend>Applicant Details</legend>
-            <table class="form_table">
-            <tbody>
-                <tr>
-                    <td><label for="firstname">First Name</label></td>
-                    <td><label for="lastname">Last Name</label></td>
-                </tr>
-                <tr>
-                    <!-- First Name -->
-                    <td><input 
-                        type="text" 
-                        name="firstname" 
-                        id="firstname" 
-                        maxlength="20" 
-                        pattern="[A-Za-z]+" 
-                        placeholder="First Name"
-                        required></td>
-                    <!-- Last Name -->
-                    <td><input 
-                        type="text" 
-                        name="lastname" 
-                        id="lastname" 
-                        maxlength="20" 
-                        pattern="[A-Za-z]+"
-                        placeholder="Last Name"
-                        required></td>
-                </tr>
-                <tr>
-                    <td><label for="dob">Date of Birth</label></td>
-                </tr>
-                <tr>
-                    <!-- Date of Birth -->
-                    <td><input 
-                        type="date" 
-                        name="dob" 
-                        id="dob" 
-                        required></td>
-                </tr>
-            </tbody>
-            </table>
+                <label for="firstname">First Name</label>
+                <label for="lastname">Last Name</label>
+                <!-- First Name -->
+                <input 
+                    type="text" 
+                    name="firstname" 
+                    id="firstname" 
+                    maxlength="20" 
+                    pattern="[A-Za-z]+" 
+                    placeholder="First Name"
+                    required>
+                <!-- Last Name -->
+                <input 
+                    type="text" 
+                    name="lastname" 
+                    id="lastname" 
+                    maxlength="20" 
+                    pattern="[A-Za-z]+"
+                    placeholder="Last Name"
+                    required>
+                <label for="dob">Date of Birth</label>
+                <!-- Date of Birth -->
+                <input 
+                    type="date" 
+                    name="dob" 
+                    id="dob" 
+                    required>
         </fieldset>
         <fieldset>
             <!-- Applicant residency details -->
             <legend>Residency</legend>
-            <table class="form_table">
-            <tbody>
-                <tr>
-                    <td><label for="address">Street Address</label></td>
-                    <td><label for="suburb">Suburb</label></td>
-                </tr>
-                <tr>
-                    <!-- Street Address -->
-                    <td><input
-                        type="text" 
-                        name="address" 
-                        id="address" 
-                        maxlength="40" 
-                        placeholder="Street Address"
-                        required></td>
-                    <!-- Suburb -->
-                    <td><input 
-                        type="text" 
-                        name="suburb" 
-                        id="suburb" 
-                        maxlength="40" 
-                        placeholder="Suburb"
-                        required></td>
-                </tr>
-                <tr>
-                    <td><label for="state">State</label></td>
-                    <td><label for="postcode">Postcode</label></td>
-                </tr>
-                <tr>
-                    <!-- State -->
-                    <td><select name="state" id="state" required>
-                        <option value="" id="select_defult"selected disabled>Select State</option>
-                        <option value="VIC">VIC</option>
-                        <option value="NSW">NSW</option>
-                        <option value="QLD">QLD</option>
-                        <option value="NT">NT</option>
-                        <option value="WA">WA</option>
-                        <option value="SA">SA</option>
-                        <option value="TAS">TAS</option>
-                        <option value="ACT">ACT</option>
-                    </select></td>
-                    <!-- Postcode -->
-                    <td><input 
-                        type="text" 
-                        name="postcode" 
-                        id="postcode" 
-                        maxlength="4" 
-                        pattern="\d{4}" 
-                        placeholder="Postcode e.g. 0000"
-                        required></td>
-                </tr>
-            </tbody>
-            </table>
+                <label for="address">Street Address</label>
+                <label for="suburb">Suburb</label>
+                <!-- Street Address -->
+                <input
+                    type="text" 
+                    name="address" 
+                    id="address" 
+                    maxlength="40" 
+                    placeholder="Street Address"
+                    required>
+                <!-- Suburb -->
+                <input 
+                    type="text" 
+                    name="suburb" 
+                    id="suburb" 
+                    maxlength="40" 
+                    placeholder="Suburb"
+                    required>
+                <label for="state">State</label>
+                <label for="postcode">Postcode</label>
+                <!-- State -->
+                <select name="state" id="state" required>
+                    <option value="" id="select_defult"selected disabled>Select State</option>
+                    <option value="VIC">VIC</option>
+                    <option value="NSW">NSW</option>
+                    <option value="QLD">QLD</option>
+                    <option value="NT">NT</option>
+                    <option value="WA">WA</option>
+                    <option value="SA">SA</option>
+                    <option value="TAS">TAS</option>
+                    <option value="ACT">ACT</option>
+                </select>
+                <!-- Postcode -->
+                <input 
+                    type="text" 
+                    name="postcode" 
+                    id="postcode" 
+                    maxlength="4" 
+                    pattern="\d{4}" 
+                    placeholder="Postcode e.g. 0000"
+                    required>
         </fieldset>
         <fieldset>
             <!-- Applicant contact details -->
             <legend>Contact Details</legend>
-            <table>
-            <tbody>
-                <tr>
-                    <td><label for="email">Email Address</label></td>
-                    <td><label for="phone">Phone Number</label></td>
-                </tr>
-                <tr>
-                    <!-- Email Address -->
-                    <td><input 
-                        type="email" 
-                        name="email" 
-                        id="email" 
-                        placeholder="Email@Address"
-                        required></td>
-                    <!-- Phone Number -->
-                    <td><input 
-                        type="text" 
-                        name="phone" 
-                        id="phone" 
-                        pattern="(((\+61\s?)|0)?((\d{3})\s?){3})|(\d{4}\s?\d{4})"
-                        placeholder="+61 000 000 000"
-                        required></td>
-                </tr>
-            </tbody>
-            </table>
+                <label for="email">Email Address</label>
+                <label for="phone">Phone Number</label>
+                <!-- Email Address -->
+                <input 
+                type="email" 
+                name="email" 
+                id="email" 
+                placeholder="Email@Address"
+                required></td>
+                <!-- Phone Number -->
+                <input 
+                type="text" 
+                name="phone" 
+                id="phone" 
+                pattern="(((\+61\s?)|0)?((\d{3})\s?){3})|(\d{4}\s?\d{4})"
+                placeholder="+61 000 000 000"
+                required>
+        </fieldset>
+        <fieldset id="skill_field">
+            <!-- Applicant Skills section -->
+            <legend>Required Technical Skills</legend>
+            <!-- ADD SKILLS -->
+            <label for="skill1"><input class="checkbox" type="checkbox" id="skill1" name="skills[]" value="skill1" required>Skill1</label>
+            <label for="skill2"><input class="checkbox" type="checkbox" id="skill2" name="skills[]" value="skill2">Skill2</label>
+            <label for="skill3"><input class="checkbox" type="checkbox" id="skill3" name="skills[]" value="skill3">Skill3</label>
         </fieldset>
         <fieldset>
-            <!-- Applicant Skills section -->
-            <legend>Skills</legend>
-            <p>Required Technical Skills</p>
-            <!-- ADD SKILLS -->
-            <label for="Skill1">Skill1</label>
-            <input type="checkbox" id="skill1" name="skills[]" value="skill1" required>
-            <br>
-            <label for="Skill2">Skill2</label>
-            <input type="checkbox" id="skill2" name="skills[]" value="skill2">
-            <br>
-            <label for="otherskills">Other Skills</label>
-            <br>
+            <legend>Other Skills</legend>
             <!-- Text Area for additional Skills -->
             <textarea id="otherskills" name="otherskills" rows="5" cols="30" placeholder="Provide any other skills here"></textarea>
-        
         </fieldset>
         <!-- Form Submit and reset area -->
         <input type="reset" id="reset" value="Clear Aplication"/>

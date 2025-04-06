@@ -195,6 +195,7 @@ video {
 }
 
 /* Apply.html */
+
 input {
     background-color: var(--pink1);
     border: bold;
@@ -221,7 +222,26 @@ textarea{
     border-color: var(--dark2);
     width: 100%;
     resize: none;
+    column-span: 2;
 }
-.form_table {
-    align-self: center;
+fieldset {
+    display: grid;
+    grid-template: 50px 50px / 50% 50%;
+    column-gap: 10px;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 20px;
+    border: none;
+}
+#skill_field {
+    display: flex;
+}
+label {
+    align-self: flex-end;
+}
+#dob {
+    grid-column: 1;
+}
+#job_reference_number {
+    grid-column: 0;
 }
