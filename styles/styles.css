@@ -23,8 +23,9 @@ body {
 
 main{
     flex: auto;
+    min-width: 800px;
     width: 50%;
-    margin:auto;
+    margin: auto;
     background-color: var(--pink1);
     padding: 1em;
 }
@@ -186,21 +187,41 @@ nav ul {
 main nav a{
     color:#251927
 }
+
+
+video {
+    width: -webkit-fill-available;
+    height: auto;
+}
+
+/* Apply.html */
 input {
     background-color: var(--pink1);
-    border-color: var(--pink2);
+    border: bold;
+    border-radius: 6px;
+    border-color: var(--dark2);
+    padding: 10px 10px;
 }
 select {
     background-color: var(--pink1);
-    border-color: var(--pink2);
+    border: bold;
+    border-radius: 6px;
+    border-color: var(--dark2);
+    padding: 10px 10px;
 }
 #submit {
     background-color: var(--dark1);
     border-color: var(--dark1);
     color: var(--lightblue);
 }
-
-video {
-    width: -webkit-fill-available;
-    height: auto;
+textarea{
+    background-color: var(--pink1);
+    border: bold;
+    border-radius: 6px;
+    border-color: var(--dark2);
+    width: 100%;
+    resize: none;
+}
+.form_table {
+    align-self: center;
 }
