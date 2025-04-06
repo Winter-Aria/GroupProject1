@@ -1,7 +1,14 @@
+<!--
+filename: index.html
+author: [Aria Jaensch, Oscar Thomas, Callahan Elliott, Noah Munro]
+created: 25-03-17
+last modified: 25-04-06
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!--HTML Meta-->
+    <!--HTML Meta-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="title" content="TBC">
@@ -13,11 +20,8 @@
     <title>Noctilia IT Solutions</title>
 </head>
 
-<!--Header-->
-
-
 <body>
-
+    <!--Header-->
     <header>
         <a href="index.html">
             <img src="images/Logo.png" id="header-logo" alt="Noctilia IT Solutions Logo">
@@ -36,11 +40,30 @@
     </header>
 
     <main>
-        <video width="1280p" height="720p" autoplay loop muted>
-            <source src="videos/Noctilia_IT_Solutions.webm" type="video/webm">
-        </source>
-        
+        <video width="1280p" height="720p" autoplay loop muted aria-details="video-descriptive-transcript">
+            <source src="videos/Noctilia_IT_Solutions.webm" type="video/webm"/>
         </video>
+        <details id="video-descriptive-transcript"> <!-- https://www.w3.org/WAI/media/av/transcripts/ -->
+            <summary>Descriptive Transcript</summary>
+            <p>[Two professionals talking in a server room]</p>
+            <p>[Noctilia Logo] Noctilia: IT Solutions</p>
+            <dl>
+                <dt>What We Do:</dt>
+                <dd>Software development</dd>
+                <dd>Hardware repair</dd>
+                <dd>Software support</dd>
+                <dd>24/7 Helpdesk</dd>
+                <dd>Cloud Storage</dd>
+                <dd>Networking</dd>
+                <dd>Managed Services</dd>
+            </dl>
+            <p>[Woman at desk with a headset typing]</p>
+            <p>To see how we can help your business, contact us!</p>
+            <ul>
+                <li>info@noctilia.it.solutions.com.au</li>
+                <li>1300 107 836</li>
+            </ul>
+        </details>
 
         <h2>
             Customer Testimonials
