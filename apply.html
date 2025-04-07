@@ -157,14 +157,16 @@ last modified: 25-04-05
             <label for="skill2"><input class="checkbox" type="checkbox" id="skill2" name="skills[]" value="skill2">Skill2</label>
             <label for="skill3"><input class="checkbox" type="checkbox" id="skill3" name="skills[]" value="skill3">Skill3</label>
         </fieldset>
-        <fieldset>
+        <fieldset id="otherskill_field">
             <legend>Other Skills</legend>
             <!-- Text Area for additional Skills -->
             <textarea id="otherskills" name="otherskills" rows="5" cols="30" placeholder="Provide any other skills here"></textarea>
         </fieldset>
-        <!-- Form Submit and reset area -->
-        <input type="reset" id="reset" value="Clear Aplication"/>
-        <input type="submit" id="submit" value="Apply"/>
+        <fieldset id="button_field">
+            <!-- Form Submit and reset area -->
+            <input type="reset" id="reset" value="Clear Aplication"/>
+            <input type="submit" id="submit" value="Apply"/>
+        </fieldset>
     </form>
     </main>
     <footer>
