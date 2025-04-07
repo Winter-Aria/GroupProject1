@@ -38,19 +38,19 @@ main{
 }
 
 h1{
-    font-family: 'arya-double', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'arya-double', Helvetica, sans-serif;
     font-style: normal;
     font-weight: 400;
     color: var(--dark1);
 }
 
 * {
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family:'myriad-pro-light', Tahoma, sans-serif;
     color: var(--dark1);
 }
 
 h2{ 
-    font-family: 'apparat-thin', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'apparat-thin', Verdana, sans-serif;
     font-style: normal;
     font-weight: 400;
 }
