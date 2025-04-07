@@ -247,10 +247,6 @@ fieldset {
     display: grid;
     grid-template: 100% / 100%;
 }
-#button_field {
-    padding-left: 10%;
-    padding-right: 10%;
-}
 label {
     align-self: flex-end;
 }
