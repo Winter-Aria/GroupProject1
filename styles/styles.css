@@ -291,3 +291,11 @@ label {
 #job_reference_number {
     grid-column: 0;
 }
+
+#button_field input {
+    transition: transform 0.2s;
+}
+
+#button_field input:hover {
+    transform: scale(1.1);
+}
