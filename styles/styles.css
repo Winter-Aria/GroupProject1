@@ -47,6 +47,8 @@ h1{
 * {
     font-family:'myriad-pro-light', Tahoma, sans-serif;
     color: var(--dark1);
+    line-height: 1.6;        
+    word-spacing: 0.05em; 
 }
 
 h2{ 
@@ -96,7 +98,7 @@ header {
 
 nav ul {
     margin: 0;
-    column-gap: 10px;
+    column-gap: 50px;
     padding: 0px;
     list-style-type: none;
     display: flex;
