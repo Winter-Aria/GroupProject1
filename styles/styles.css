@@ -173,6 +173,19 @@ footer {
     h2 {
         color:#D7EBFA;
     }
+
+    
+}
+footer ul li {
+    transition: transform 0.2s;
+}
+
+footer ul li:hover {
+    transform: scale(1.1);
+}
+
+footer ul li:hover a {
+    color: var(--hoverblue);
 }
 
 
