@@ -176,7 +176,6 @@ footer {
     }
 
 }
-
 nav ul {
     li {
         transition: transform 0.2s;
@@ -222,6 +221,7 @@ select {
     border-color: var(--dark1);
     color: var(--lightblue);
 }
+/* Text area | size fixed */
 textarea{
     background-color: var(--pink1);
     border: bold;
@@ -229,7 +229,7 @@ textarea{
     border-color: var(--dark2);
     width: 100%;
     resize: none;
-    column-span: 2;
+    grid-column: 0 / 2;
 }
 fieldset {
     display: grid;
@@ -243,12 +243,16 @@ fieldset {
 #skill_field {
     display: flex;
 }
+#otherskill_field {
+    display: grid;
+    grid-template: 100% / 100%;
+}
 label {
     align-self: flex-end;
 }
 #dob {
     grid-column: 1;
 }
-#job_reference_number {
-    grid-column: 0;
+#job_reference {
+    grid-column: 1;
 }
