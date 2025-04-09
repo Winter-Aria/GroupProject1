@@ -42,6 +42,7 @@ last modified: 25-04-05
 
     <main>
     <h1>Join Our Team</h1>
+    <hr>
     <!-- Job application form initiator -->
     <form method="post" action="http://mercury.swin.edu.au/it000000/formtest.php">
         <fieldset id="job_reference_number">
@@ -134,7 +135,7 @@ last modified: 25-04-05
                     placeholder="Postcode e.g. 0000"
                     required>
         </fieldset>
-        <fieldset>
+        <fieldset id="contact_fieldset">
             <!-- Applicant contact details -->
             <legend>Contact Details:</legend>
                 <label for="email">Email Address</label>
@@ -165,9 +166,10 @@ last modified: 25-04-05
         </fieldset>
         <fieldset id="otherskill_field">
             <!-- Text Area for additional Skills -->
-            <label for="otherskills">Other Technical Skills</label>
+            <label for="otherskills">Other Technical Skills:</label>
             <textarea id="otherskills" name="otherskills" rows="5" cols="30" placeholder="Provide any other skills here"></textarea>
         </fieldset>
+        <hr>
         <fieldset id="button_field">
             <!-- Form Submit and reset area -->
             <input type="reset" id="reset" value="Clear Aplication"/>

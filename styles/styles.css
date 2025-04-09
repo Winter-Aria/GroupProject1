@@ -241,6 +241,26 @@ video {
 }
 
 /* Apply.html */
+/* Fieldsets */
+fieldset {
+    display: grid;
+    grid-template: 20px 50px 30px 50px / 50% 50%;
+    column-gap: 10px;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 20px;
+    border: none;
+}
+#job_reference_number, #contact_fieldset {
+    grid-template: 20px 50px / 50% 50%;
+}
+#skill_field {
+    display: flex;
+}
+#otherskill_field {
+    grid-template: 20px 150px / 100%;
+}
+/* Fieldsets end */
 
 input {
     background-color: var(--pink1);
@@ -268,19 +288,7 @@ textarea{
     border-color: var(--dark2);
     width: 100%;
     resize: none;
-    column-span: 2;
-}
-fieldset {
-    display: grid;
-    grid-template: 50px 50px / 50% 50%;
-    column-gap: 10px;
-    padding-left: 20%;
-    padding-right: 20%;
-    padding-bottom: 40px;
-    border: none;
-}
-#skill_field {
-    display: flex;
+    grid-column-end: 2;
 }
 label {
     align-self: flex-end;
@@ -292,14 +300,17 @@ label {
     grid-column: 1;
 }
 #otherskills {
-    grid-row: 2;
+    grid-column-end: 2;
 }
+
 #button_field input {
     transition: transform 0.2s;
+    justify-content: center;
+    grid-row-start: 2;
 }
 
 #button_field input:hover {
-    transform: scale(1.1);
+    transform: scale(1.03);
 }
 
 table#Reviews tr, th, td {
