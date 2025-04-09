@@ -299,3 +299,9 @@ label {
 #button_field input:hover {
     transform: scale(1.1);
 }
+
+table#Reviews tr, th, td {
+    padding: auto;
+    text-align: left;
+    min-width: auto;
+}
