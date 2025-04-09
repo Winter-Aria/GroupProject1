@@ -47,6 +47,8 @@ h1{
 * {
     font-family:'myriad-pro-light', Tahoma, sans-serif;
     color: var(--dark1);
+    line-height: 1.6;        
+    word-spacing: 0.05em; 
 }
 
 h2{ 
@@ -93,10 +95,34 @@ header {
     box-shadow: 0px 0px 2px 1px var(--dark1);
     position: relative; /* makes box shadow render properly */
 }
+.header-email {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    color: var(--lightblue);
+}
+
+.header-email a {
+    color: var(--lightblue);
+    text-decoration: none;
+    font-family: 'apparat-thin', Verdana, sans-serif;
+    font-weight: 400;
+    transition: color 0.2s;
+    transition: transform 0.2s;
+}
+
+.header-email a:hover {
+    color: var(--hoverblue);
+    transform: scale(1.1);
+    }
+
+
+
 
 nav ul {
     margin: 0;
-    column-gap: 10px;
+    column-gap: 40px;
     padding: 0px;
     list-style-type: none;
     display: flex;
@@ -147,6 +173,19 @@ footer {
     h2 {
         color:#D7EBFA;
     }
+
+    
+}
+footer ul li {
+    transition: transform 0.2s;
+}
+
+footer ul li:hover {
+    transform: scale(1.1);
+}
+
+footer ul li:hover a {
+    color: var(--hoverblue);
 }
 
 
@@ -176,6 +215,7 @@ footer {
     }
 
 }
+
 nav ul {
     li {
         transition: transform 0.2s;
@@ -221,7 +261,6 @@ select {
     border-color: var(--dark1);
     color: var(--lightblue);
 }
-/* Text area | size fixed */
 textarea{
     background-color: var(--pink1);
     border: bold;
@@ -229,7 +268,7 @@ textarea{
     border-color: var(--dark2);
     width: 100%;
     resize: none;
-    grid-column: 0 / 2;
+    column-span: 2;
 }
 fieldset {
     display: grid;
@@ -243,16 +282,20 @@ fieldset {
 #skill_field {
     display: flex;
 }
-#otherskill_field {
-    display: grid;
-    grid-template: 100% / 100%;
-}
 label {
     align-self: flex-end;
 }
 #dob {
     grid-column: 1;
 }
-#job_reference {
-    grid-column: 1;
+#job_reference_number {
+    grid-column: 0;
+}
+
+#button_field input {
+    transition: transform 0.2s;
+}
+
+#button_field input:hover {
+    transform: scale(1.1);
 }
