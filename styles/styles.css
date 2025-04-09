@@ -276,7 +276,7 @@ fieldset {
     column-gap: 10px;
     padding-left: 20%;
     padding-right: 20%;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
     border: none;
 }
 #skill_field {
@@ -288,10 +288,12 @@ label {
 #dob {
     grid-column: 1;
 }
-#job_reference_number {
-    grid-column: 0;
+#job_reference {
+    grid-column: 1;
 }
-
+#otherskills {
+    grid-row: 2;
+}
 #button_field input {
     transition: transform 0.2s;
 }
