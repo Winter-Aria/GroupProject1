@@ -256,6 +256,13 @@ fieldset {
 }
 #skill_field {
     display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+#language_field {
+    grid-template: 25px 25px 25px 25px / 1fr 1fr 1fr;
 }
 #otherskill_field {
     grid-template: 20px 150px / 100%;
@@ -301,6 +308,9 @@ label {
 }
 #otherskills {
     grid-column-end: 2;
+}
+.checkbox {
+    border: bold 2px var(--pink1);
 }
 
 #button_field input {
