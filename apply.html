@@ -41,12 +41,13 @@ last modified: 25-04-05
 </header>
 
     <main>
-    <h1>Placeholder Heading 1</h1>
+    <h1>Join Our Team</h1>
+    <hr>
     <!-- Job application form initiator -->
     <form method="post" action="http://mercury.swin.edu.au/it000000/formtest.php">
         <fieldset id="job_reference_number">
             <!-- Job Reference Number Dropdown selection section -->
-            <legend>Job Reference Number</legend>
+            <legend>Job Reference Number:</legend>
                 <label for="job_reference">Select Reference Number</label>
                 <!-- Job Reference Number -->
                 <select name="job_reference" id="job_reference" required>
@@ -60,7 +61,7 @@ last modified: 25-04-05
         </fieldset>
         <fieldset>
             <!-- Aplicant personal details section -->
-            <legend>Applicant Details</legend>
+            <legend>Applicant Details:</legend>
                 <label for="firstname">First Name</label>
                 <label for="lastname">Last Name</label>
                 <!-- First Name -->
@@ -91,7 +92,7 @@ last modified: 25-04-05
         </fieldset>
         <fieldset>
             <!-- Applicant residency details -->
-            <legend>Residency</legend>
+            <legend>Residency:</legend>
                 <label for="address">Street Address</label>
                 <label for="suburb">Suburb</label>
                 <!-- Street Address -->
@@ -134,9 +135,9 @@ last modified: 25-04-05
                     placeholder="Postcode e.g. 0000"
                     required>
         </fieldset>
-        <fieldset>
+        <fieldset id="contact_fieldset">
             <!-- Applicant contact details -->
-            <legend>Contact Details</legend>
+            <legend>Contact Details:</legend>
                 <label for="email">Email Address</label>
                 <label for="phone">Phone Number</label>
                 <!-- Email Address -->
@@ -157,17 +158,18 @@ last modified: 25-04-05
         </fieldset>
         <fieldset id="skill_field">
             <!-- Applicant Skills section -->
-            <legend>Required Technical Skills</legend>
+            <legend>Required Technical Skills:</legend>
             <!-- ADD SKILLS -->
             <label for="skill1"><input class="checkbox" type="checkbox" id="skill1" name="skills[]" value="skill1" required>Skill1</label>
             <label for="skill2"><input class="checkbox" type="checkbox" id="skill2" name="skills[]" value="skill2">Skill2</label>
             <label for="skill3"><input class="checkbox" type="checkbox" id="skill3" name="skills[]" value="skill3">Skill3</label>
         </fieldset>
         <fieldset id="otherskill_field">
-            <legend>Other Skills</legend>
             <!-- Text Area for additional Skills -->
+            <label for="otherskills">Other Technical Skills:</label>
             <textarea id="otherskills" name="otherskills" rows="5" cols="30" placeholder="Provide any other skills here"></textarea>
         </fieldset>
+        <hr>
         <fieldset id="button_field">
             <!-- Form Submit and reset area -->
             <input type="reset" id="reset" value="Clear Aplication"/>
