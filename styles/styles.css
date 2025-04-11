@@ -267,6 +267,9 @@ fieldset {
 #otherskill_field {
     grid-template: 20px 150px / 100%;
 }
+#button_field {
+    grid-template: 30px / 50% 50%;
+}
 /* Fieldsets end */
 
 input {
@@ -328,7 +331,6 @@ table#Reviews tr, th, td {
     text-align: left;
     min-width: auto;
 }
-
 
 aside {
     border: 2px solid #251927;
