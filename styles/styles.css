@@ -38,12 +38,11 @@ main{
     padding: 1em;
 }
 
-h1{
-    font-family: 'arya-double', Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: 700;
+h1 {
+    font: normal 700 2em 'arya-double', Helvetica, sans-serif;
     color: var(--dark1);
 }
+
 
 * {
     font-family:'myriad-pro-light', Tahoma, sans-serif;
