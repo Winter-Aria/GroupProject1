@@ -35,7 +35,7 @@ main{
     width: 50%;
     margin: auto;
     background-color: var(--pink1);
-    padding: 1em;
+    padding: 2em;
 }
 
 h1{
@@ -43,6 +43,7 @@ h1{
     font-style: normal;
     font-weight: 700;
     color: var(--dark1);
+    margin-top: 0;
 }
 
 * {
@@ -278,4 +279,12 @@ aside {
     width: 25%;               
     float: right;              
     box-sizing: border-box;  
+}
+
+/* make decription lists more readable */
+dt:after {
+    content: ":";
+}
+dd {
+    margin-bottom: 0.5em;
 }
