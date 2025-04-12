@@ -18,8 +18,15 @@ last modified: 25-04-06
     --pink1: #EEEAFC;
     /* Body background colour */
     --pink2: #E6DFFC;
+    /* Placeholder Gray */
+    --phgray: #808080;
+}   
+* {
+    font-family:'myriad-pro-light', Tahoma, sans-serif;
+    color: var(--dark1);
+    line-height: 1.6;        
+    word-spacing: 0.05em; 
 }
-
 body {
     background-color:var(--pink2);
     margin: 0px;
@@ -45,14 +52,6 @@ h1 {
     font: normal 700 2em 'arya-double', Helvetica, sans-serif;
     color: var(--dark1);
     margin-top: 0;
-}
-
-
-* {
-    font-family:'myriad-pro-light', Tahoma, sans-serif;
-    color: var(--dark1);
-    line-height: 1.6;        
-    word-spacing: 0.05em; 
 }
 
 h2{ 
@@ -240,8 +239,14 @@ select {
     padding: 10px 10px;
     font-size: 1em;
 }
-select::placeholder {
-    color: #9c98a6;
+select:required:invalid {
+    color: var(--phgray);
+}
+input[type="date"]:invalid {
+    color: var(--phgray);
+}
+#select_defult {
+    color: var(--phgray);
 }
 #submit {
     background-color: var(--dark1);
