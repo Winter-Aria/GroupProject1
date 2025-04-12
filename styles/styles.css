@@ -37,7 +37,10 @@ main{
     background-color: var(--pink1);
     padding: 2em;
 }
-
+#services_content {
+    padding-left: 8%;
+    padding-top: 5%;
+}
 h1 {
     font: normal 700 2em 'arya-double', Helvetica, sans-serif;
     color: var(--dark1);
@@ -186,22 +189,19 @@ video {
 /* Fieldsets */
 fieldset {
     display: grid;
-    grid-template: 20px 50px 30px 50px / 50% 50%;
-    column-gap: 10px;
-    padding-left: 20%;
-    padding-right: 20%;
+    grid-template: 20px 58px 20px 58px / 50% 50%;
+    column-gap: 40px;
+    padding-left: 15%;
+    padding-right: 15%;
     padding-bottom: 20px;
     border: none;
+    align-self: center;
 }
 #job_reference_number, #contact_fieldset {
     grid-template: 20px 50px / 50% 50%;
 }
 #skill_field {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
+    grid-template: repeat(8, 25px) / 50% 50%;
 }
 #language_field {
     grid-template: 25px 25px 25px 25px / 1fr 1fr 1fr;
@@ -210,23 +210,38 @@ fieldset {
     grid-template: 20px 150px / 100%;
 }
 #button_field {
-    grid-template: 30px / 50% 50%;
+    grid-template: 30px / 15% 1fr 1fr 1fr 15%;
+    column-gap: normal;
 }
 /* Fieldsets end */
-
+label {
+    align-self: center;
+}
+#otherskillslabel {
+    font-size: 1.4em;
+}
+legend {
+    font-size: 1.4em;
+}
 input {
     background-color: var(--pink1);
     border: bold;
     border-radius: 6px;
     border-color: var(--dark2);
     padding: 10px 10px;
+    font-size: 1em;
 }
 select {
     background-color: var(--pink1);
+    height: 54px;
     border: bold;
     border-radius: 6px;
     border-color: var(--dark2);
     padding: 10px 10px;
+    font-size: 1em;
+}
+select::placeholder {
+    color: #9c98a6;
 }
 #submit {
     background-color: var(--dark1);
@@ -242,8 +257,11 @@ textarea{
     resize: none;
     grid-column-end: 2;
 }
-label {
-    align-self: flex-end;
+input {
+    height: 30px;
+}
+.checkbox{
+    height: auto;
 }
 #dob {
     grid-column: 1;
@@ -267,6 +285,14 @@ label {
 #button_field input:hover {
     transform: scale(1.03);
 }
+#reset {
+    grid-column: 2;
+    height: auto;
+}
+#submit {
+    grid-column: 4;
+    height: auto;
+}
 
 table#Reviews tr, th, td {
     padding: auto;
@@ -282,6 +308,7 @@ aside {
     float: right;              
     box-sizing: border-box;  
 }
+
 
 /* make decription lists more readable */
 dt:after {
