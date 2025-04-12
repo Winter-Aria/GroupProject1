@@ -41,6 +41,7 @@ main{
 h1 {
     font: normal 700 2em 'arya-double', Helvetica, sans-serif;
     color: var(--dark1);
+    padding-left: 30px;
 }
 
 
