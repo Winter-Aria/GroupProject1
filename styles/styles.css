@@ -87,6 +87,7 @@ h2{
     font-size: 2em;
 }
 
+/* button hover effect */
 nav ul li, .hover-link {
     transition: transform 0.2s;
     a {
@@ -100,6 +101,7 @@ nav ul li:hover, .hover-link:hover {
     transform: scale(1.1);
 }
 
+/* position email link in header */
 #header-email {
     margin: 0 15px 0 auto;
 }
@@ -119,6 +121,7 @@ header {
     }
 }
 
+/* layout for navbar links */
 nav ul {
     margin: 0;
     column-gap: 1em;
@@ -140,12 +143,10 @@ nav ul {
     font-size: large;
 }
 
+/* scale header logo */
+#header-logo { width: 10em; }
 
-#header-logo {
-    width: 10em;
-    margin-bottom: 0em; /* center image around main text (looks better) */
-}
-
+/* footer */
 footer {
     position:relative;
     box-shadow: var(--dark2) 0 -1px 1px;
@@ -166,34 +167,16 @@ footer {
     }
 }
 
+/* position copyright text in footer */
 .Copyright {
     position: absolute; 
     bottom: 0; 
     left: 0; 
     padding: 10px; 
     margin: 10px;
-   
 }
 
-#topright {
-    position: absolute;
-    top: 0;
-    padding: 0.5em;
-    color: rgb(126, 90, 114);
-    width: 100%;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: space-between;
-    a {
-        color: #7e5a72;
-    }
-    p {
-        margin: 0;
-    }
-
-}
-
-
+/* scale video on index.html */
 video {
     width: 100%;
     height: auto;
@@ -288,7 +271,6 @@ table#Reviews tr, th, td {
     min-width: auto;
 }
 
-
 aside {
     border: 2px solid #251927;
     margin: 20px;              
@@ -296,4 +278,4 @@ aside {
     width: 25%;               
     float: right;              
     box-sizing: border-box;  
-  }
+}
