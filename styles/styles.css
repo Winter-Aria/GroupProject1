@@ -38,13 +38,12 @@ main{
     padding: 2em;
 }
 
-h1{
-    font-family: 'arya-double', Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: 700;
+h1 {
+    font: normal 700 2em 'arya-double', Helvetica, sans-serif;
     color: var(--dark1);
     margin-top: 0;
 }
+
 
 * {
     font-family:'myriad-pro-light', Tahoma, sans-serif;
@@ -209,6 +208,9 @@ fieldset {
 }
 #otherskill_field {
     grid-template: 20px 150px / 100%;
+}
+#button_field {
+    grid-template: 30px / 50% 50%;
 }
 /* Fieldsets end */
 
