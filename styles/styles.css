@@ -245,7 +245,7 @@ select:required:invalid {
 input[type="date"]:invalid {
     color: var(--phgray);
 }
-#select_defult {
+.select_defult {
     color: var(--phgray);
 }
 textarea{
