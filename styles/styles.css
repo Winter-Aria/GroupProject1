@@ -172,6 +172,7 @@ fieldset {
         box-sizing: border-box;
     }
     div {
+        height: 5.5em;
         display: grid;
         grid-template-rows: min-content;
     }
