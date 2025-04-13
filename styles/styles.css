@@ -377,7 +377,7 @@ figure {
     }
     li {
         flex: 1 0 auto;
-        display: inline-block;
+        display: grid;
         padding: 10px 15px;
         border: 2px solid var(--dark1);
         border-radius: 6px;
@@ -386,7 +386,6 @@ figure {
         justify-content: center;
     }
     a {
-        display: block;
         justify-self: center;
         padding: 0;
         color: var(--dark1);
