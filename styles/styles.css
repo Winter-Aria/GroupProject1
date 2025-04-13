@@ -92,12 +92,12 @@ h2{
 /* button hover effect */
 nav ul li, .hover-link {
     transition: transform 0.2s;
-    a {
+    & a {
         transition: color 0.2s;
     }
 }
 nav ul li:hover, .hover-link:hover {
-    a {
+    & a {
         color: var(--hoverblue);
     }
     transform: scale(1.1);
@@ -116,7 +116,7 @@ header {
     column-gap: 1em;
     box-shadow: 0px 0px 2px 1px var(--dark1);
     position: relative; /* makes box shadow render properly */
-    a {
+    & a {
         color: var(--lightblue);
         display: flex;
         align-items: center;
@@ -131,7 +131,7 @@ nav ul {
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    a {
+    & a {
         gap: 0.2em;
         text-decoration: none;
         padding: 15px 0 15px 0;
@@ -159,7 +159,7 @@ footer {
     align-items: center;
     justify-content: center;
     gap: 1em;
-    ul {
+    & ul {
         list-style: none;
         padding: 0;
         flex-direction: column;
@@ -224,18 +224,17 @@ legend {
 }
 input {
     background-color: var(--pink1);
-    border: bold;
+    border: 2px solid var(--dark2);
     border-radius: 6px;
-    border-color: var(--dark2);
     padding: 10px 10px;
     font-size: 1em;
+    height: 30px;
 }
 select {
     background-color: var(--pink1);
     height: 54px;
-    border: bold;
+    border: 2px solid var(--dark2);
     border-radius: 6px;
-    border-color: var(--dark2);
     padding: 10px 10px;
     font-size: 1em;
 }
@@ -250,18 +249,11 @@ input[type="date"]:invalid {
 }
 textarea{
     background-color: var(--pink1);
-    border: bold;
+    border: 2px solid var(--dark2);
     border-radius: 6px;
-    border-color: var(--dark2);
     width: 100%;
     resize: none;
     grid-column-end: 2;
-}
-input {
-    height: 30px;
-}
-.checkbox{
-    height: auto;
 }
 #dob {
     grid-column: 1;
@@ -273,7 +265,7 @@ input {
     grid-column-end: 2;
 }
 .checkbox {
-    border: bold 2px var(--pink1);
+    height: auto;
 }
 
 #button_field input {
@@ -298,7 +290,7 @@ input {
 }
 
 table#Reviews tr, th, td {
-    padding: auto;
+    padding: 12px;
     text-align: left;
     min-width: auto;
 }
