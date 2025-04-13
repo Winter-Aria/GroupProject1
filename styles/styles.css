@@ -131,6 +131,7 @@ nav ul {
     list-style-type: none;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     & a {
         gap: 0.2em;
         text-decoration: none;
@@ -361,18 +362,32 @@ figure {
     }
 }
 
-#serviceLinks li a.service_links {
-    display: inline-block;
-    padding: 10px 15px;
-    border: 2px solid #007BFF;
-    border-radius: 6px;
-    text-decoration: none;
-    color: #007BFF;
-    background-color: #f9f9f9;
-    transition: all 0.3s ease;
+#service_links {
+    position: sticky;
+    top: 10px;
+    background-color: var(--pink1);
+    padding: 10px;
+    border: 2px solid gray;
+    border-radius: 5px;
+    ul {
+        gap: 0.5em;
+        justify-content: space-evenly;
+    }
+    li a.service_link {
+        flex-grow: 1;
+        display: inline-block;
+        padding: 10px 15px;
+        border: 2px solid #007BFF;
+        border-radius: 6px;
+        text-decoration: none;
+        color: #007BFF;
+        background-color: #f9f9f9;
+        transition: all 0.3s ease;
+    }
 }
 
 /* make details drop downs more obvious */
 details {
     cursor: pointer;
 }
+
