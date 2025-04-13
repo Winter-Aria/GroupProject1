@@ -20,6 +20,8 @@ last modified: 25-04-06
     --pink2: #E6DFFC;
     /* Placeholder Gray */
     --phgray: #808080;
+    /* card color - light contrast against --pink1*/
+    --cardpink: rgb(219, 193, 220);
 }   
 * {
     font-family:'myriad-pro-light', Tahoma, sans-serif;
@@ -327,6 +329,9 @@ dd {
 
 /* scale image figure in about.html */
 figure {
+    background-color: var(--cardpink);
+    border-radius: 10px;
+    padding: 0.5em;
     margin: 0;
     float: right;
     width: 50%;
@@ -342,7 +347,7 @@ figure {
     gap: 1em;
     padding: 0;
     li {
-        background-color: rgb(219, 193, 220);
+        background-color: var(--cardpink);
         border-radius: 10px;
         padding: 10px;
         display: flex;
@@ -408,6 +413,24 @@ details {
     cursor: pointer;
 }
 
-@media screen {
+/* media queries to change various parts of the website
+to allow for usability on small screens */
+@media (max-width: 500px) {
     main { padding: 5px; }
+    figure {
+        float:none;
+        width: auto;
+    }
+    #service_links { position:initial; }
+    .JobSection {
+        flex-direction: column;
+        img { width: auto; }
+        div { max-width: none; }
+    }
+    #header-logo { display: none; }
+    header {
+        flex-direction: column;
+        align-items: initial;
+    }
+    #header-email { margin: 0; }
 }
