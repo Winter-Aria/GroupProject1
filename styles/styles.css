@@ -367,7 +367,7 @@ figure {
     top: 10px;
     background-color: var(--pink1);
     padding: 10px;
-    border: 2px solid gray;
+    border: 2px solid var(--dark1);
     border-radius: 5px;
     ul {
         gap: 0.5em;
@@ -377,11 +377,11 @@ figure {
         flex-grow: 1;
         display: inline-block;
         padding: 10px 15px;
-        border: 2px solid #007BFF;
+        border: 2px solid var(--dark1);
         border-radius: 6px;
         text-decoration: none;
-        color: #007BFF;
-        background-color: #f9f9f9;
+        color: var(--dark1);
+        background-color: var(--pink1);
         transition: all 0.3s ease;
     }
 }
