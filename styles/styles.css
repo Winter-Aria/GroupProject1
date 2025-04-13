@@ -293,10 +293,22 @@ textarea{
     color: var(--lightblue);
 }
 
-table#Reviews tr, th, td {
-    padding: 12px;
-    text-align: left;
-    min-width: auto;
+#reviews {
+    div {
+        display: flex;
+        width: fit-content;
+        gap: 2em;
+        div {
+            width: 100vw;
+            max-width: 370px;
+            display: block;
+        }
+        blockquote {
+            margin: 0 0 0 1em;
+        }
+    }
+    overflow-x: scroll;
+    overflow-y: visible;
 }
 
 aside {
@@ -399,3 +411,6 @@ details {
     cursor: pointer;
 }
 
+@media screen {
+    main { padding: 5px; }
+}
