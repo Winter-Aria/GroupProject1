@@ -373,19 +373,23 @@ figure {
     border: 2px solid var(--dark1);
     border-radius: 5px;
     ul {
-        gap: 0.5em;
-        justify-content: space-evenly;
+        gap: 0.7em;
     }
-    li a.service_link {
-        flex-grow: 1;
+    li {
+        flex: 1 0 auto;
         display: inline-block;
         padding: 10px 15px;
         border: 2px solid var(--dark1);
         border-radius: 6px;
         text-decoration: none;
-        color: var(--dark1);
         background-color: var(--pink1);
-        transition: all 0.3s ease;
+        justify-content: center;
+    }
+    a {
+        display: block;
+        justify-self: center;
+        padding: 0;
+        color: var(--dark1);
     }
 }
 
