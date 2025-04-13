@@ -167,10 +167,14 @@ fieldset {
     column-gap: 1em;
     border: none;
     align-self: center;
-    div, input:not([type=checkbox]), select {
+    input:not([type=checkbox]), select {
         width: 100%;
         box-sizing: border-box;
     }
+    div {
+        display: grid;
+    }
+
 }
 #language_field {
     grid-template-columns: 1fr 1fr 1fr;
