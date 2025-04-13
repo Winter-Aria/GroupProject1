@@ -45,10 +45,6 @@ main{
     background-color: var(--pink1);
     padding: 2em;
 }
-#services_content {
-    padding-left: 8%;
-    padding-top: 5%;
-}
 h1 {
     font: normal 700 2em 'arya-double', Helvetica, sans-serif;
     color: var(--dark1);
@@ -138,7 +134,7 @@ nav ul {
     & a {
         gap: 0.2em;
         text-decoration: none;
-        padding: 15px 0 15px 0;
+        padding: 1em 0 1em 0;
     }
 }
 
@@ -180,6 +176,7 @@ footer {
     left: 0; 
     padding: 10px; 
     margin: 10px;
+    font-size: clamp(2px, 3vw, 20px); /* responsive sizing to prevent text from covering links */
 }
 
 /* scale video on index.html */
@@ -302,7 +299,7 @@ textarea{
             width: 100vw;
             max-width: 370px;
             display: block;
-        }
+        }   
         blockquote {
             margin: 0 0 0 1em;
         }
@@ -383,11 +380,11 @@ figure {
     position: sticky;
     top: 10px;
     background-color: var(--pink1);
-    padding: 10px;
+    padding: 0.4em;
     border: 2px solid var(--dark1);
     border-radius: 5px;
     ul {
-        gap: 0.7em;
+        gap: 0.4em;
     }
     li {
         flex: 1 0 auto;
