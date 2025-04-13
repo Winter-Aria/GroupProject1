@@ -290,3 +290,52 @@ dt:after {
 dd {
     margin-bottom: 0.5em;
 }
+
+/* scale image figure in about.html */
+figure {
+    margin: 0;
+    float: right;
+    width: 50%;
+    img {
+        width: 100%;
+        border: solid;
+    }
+}
+
+#member-details {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 0;
+    li {
+        background-color: rgb(219, 193, 220);
+        border-radius: 10px;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+    dt:before {
+        display: block;
+        content: "";
+    }
+    dt {
+        display: inline;
+    }
+    dd {
+        display: inline;
+        text-wrap: nowrap;
+        margin: 0;
+    }
+}
+
+#member-interests {
+    justify-self: center;
+    td {
+        background-color: var(--pink1);
+        border-radius: 0.2em;
+    }
+    td:hover {
+        background-color: #c0a1b7;
+    }
+}
