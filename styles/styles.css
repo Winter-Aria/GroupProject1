@@ -18,8 +18,15 @@ last modified: 25-04-06
     --pink1: #EEEAFC;
     /* Body background colour */
     --pink2: #E6DFFC;
+    /* Placeholder Gray */
+    --phgray: #808080;
+}   
+* {
+    font-family:'myriad-pro-light', Tahoma, sans-serif;
+    color: var(--dark1);
+    line-height: 1.6;        
+    word-spacing: 0.05em; 
 }
-
 body {
     background-color:var(--pink2);
     margin: 0px;
@@ -37,19 +44,14 @@ main{
     background-color: var(--pink1);
     padding: 2em;
 }
-
+#services_content {
+    padding-left: 8%;
+    padding-top: 5%;
+}
 h1 {
     font: normal 700 2em 'arya-double', Helvetica, sans-serif;
     color: var(--dark1);
     margin-top: 0;
-}
-
-
-* {
-    font-family:'myriad-pro-light', Tahoma, sans-serif;
-    color: var(--dark1);
-    line-height: 1.6;        
-    word-spacing: 0.05em; 
 }
 
 h2{ 
@@ -90,12 +92,12 @@ h2{
 /* button hover effect */
 nav ul li, .hover-link {
     transition: transform 0.2s;
-    a {
+    & a {
         transition: color 0.2s;
     }
 }
 nav ul li:hover, .hover-link:hover {
-    a {
+    & a {
         color: var(--hoverblue);
     }
     transform: scale(1.1);
@@ -114,7 +116,7 @@ header {
     column-gap: 1em;
     box-shadow: 0px 0px 2px 1px var(--dark1);
     position: relative; /* makes box shadow render properly */
-    a {
+    & a {
         color: var(--lightblue);
         display: flex;
         align-items: center;
@@ -129,7 +131,7 @@ nav ul {
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    a {
+    & a {
         gap: 0.2em;
         text-decoration: none;
         padding: 15px 0 15px 0;
@@ -157,7 +159,7 @@ footer {
     align-items: center;
     justify-content: center;
     gap: 1em;
-    ul {
+    & ul {
         list-style: none;
         padding: 0;
         flex-direction: column;
@@ -186,22 +188,19 @@ video {
 /* Fieldsets */
 fieldset {
     display: grid;
-    grid-template: 20px 50px 30px 50px / 50% 50%;
-    column-gap: 10px;
-    padding-left: 20%;
-    padding-right: 20%;
+    grid-template: 20px 58px 20px 58px / 50% 50%;
+    column-gap: 40px;
+    padding-left: 10%;
+    padding-right: 15%;
     padding-bottom: 20px;
     border: none;
+    align-self: center;
 }
 #job_reference_number, #contact_fieldset {
     grid-template: 20px 50px / 50% 50%;
 }
 #skill_field {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
+    grid-template: repeat(10, 25px) / 50% 50%;
 }
 #language_field {
     grid-template: 25px 25px 25px 25px / 1fr 1fr 1fr;
@@ -210,40 +209,51 @@ fieldset {
     grid-template: 20px 150px / 100%;
 }
 #button_field {
-    grid-template: 30px / 50% 50%;
+    grid-template: 30px / 15% 1fr 1fr 1fr 15%;
+    column-gap: normal;
 }
 /* Fieldsets end */
-
+label {
+    align-self: center;
+}
+#otherskillslabel {
+    font-size: 1.4em;
+}
+legend {
+    font-size: 1.4em;
+}
 input {
     background-color: var(--pink1);
-    border: bold;
+    border: 2px solid var(--dark2);
     border-radius: 6px;
-    border-color: var(--dark2);
     padding: 10px 10px;
+    font-size: 1em;
+    height: 30px;
 }
 select {
     background-color: var(--pink1);
-    border: bold;
+    height: 54px;
+    border: 2px solid var(--dark2);
     border-radius: 6px;
-    border-color: var(--dark2);
     padding: 10px 10px;
+    font-size: 1em;
 }
-#submit {
-    background-color: var(--dark1);
-    border-color: var(--dark1);
-    color: var(--lightblue);
+select:required:invalid {
+    color: var(--phgray);
+}
+input[type="date"]:invalid {
+    color: var(--phgray);
+}
+.select_defult {
+    color: var(--phgray);
 }
 textarea{
     background-color: var(--pink1);
-    border: bold;
+    border: 2px solid var(--dark2);
     border-radius: 6px;
-    border-color: var(--dark2);
     width: 100%;
     resize: none;
     grid-column-end: 2;
-}
-label {
-    align-self: flex-end;
 }
 #dob {
     grid-column: 1;
@@ -255,7 +265,7 @@ label {
     grid-column-end: 2;
 }
 .checkbox {
-    border: bold 2px var(--pink1);
+    height: auto;
 }
 
 #button_field input {
@@ -267,9 +277,20 @@ label {
 #button_field input:hover {
     transform: scale(1.03);
 }
+#reset {
+    grid-column: 2;
+    height: auto;
+}
+#submit {
+    grid-column: 4;
+    height: auto;
+    background-color: var(--dark1);
+    border-color: var(--dark1);
+    color: var(--lightblue);
+}
 
 table#Reviews tr, th, td {
-    padding: auto;
+    padding: 12px;
     text-align: left;
     min-width: auto;
 }
@@ -338,4 +359,15 @@ figure {
     td:hover {
         background-color: #c0a1b7;
     }
+}
+
+#serviceLinks li a.service_links {
+    display: inline-block;
+    padding: 10px 15px;
+    border: 2px solid #007BFF;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #007BFF;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
 }

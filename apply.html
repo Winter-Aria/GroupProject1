@@ -24,8 +24,8 @@ last modified: 25-04-05
         </a>
         <nav class="navbar">
             <ul>
-                <li><a href="index.html"><img src="images/icons/house.svg" alt="Home Icon" width="22" height="22"/>Home</a></li>
-                <li><a href="services.html"><img src="images/icons/pc-display.svg" alt="PC and Monitor Icon" width="22" height="22"/>Our Services</a></li>
+                <li><a href="index.html"><img src="images/icons/house.svg" alt="Home Icon" width="22" height="22">Home</a></li>
+                <li><a href="services.html"><img src="images/icons/pc-display.svg" alt="PC and Monitor Icon" width="22" height="22">Our Services</a></li>
                 <li><a href="jobs.html"><img src="images/icons/person-vcard.svg" alt="ID Card Icon" width="22" height="22">Careers</a></li>
                 <li><a href="apply.html"><img src="images/icons/pencil-square.svg" alt="Pencil and Notepad Icon" width="22" height="22">Join Our Team</a></li>
                 <li><a href="about.html"><img src="images/icons/people.svg" alt="People Icon" width="22" height="22">About Us</a></li>
@@ -51,7 +51,7 @@ last modified: 25-04-05
                 <label for="job_reference">Select Reference Number</label>
                 <!-- Job Reference Number -->
                 <select name="job_reference" id="job_reference" required>
-                    <option value="" id="select_defult" selected disabled>Please Select Reference Number</option>
+                    <option value="" class="select_defult" selected disabled>Please Select Reference Number</option>
                     <!-- Job Refference Numbers-->
                     <option value="BA113">BA113</option>
                     <option value="AB232">AB232</option>
@@ -68,7 +68,7 @@ last modified: 25-04-05
                 <input 
                     type="text" 
                     name="firstname" 
-                    id="firstname" 
+                    id="firstname"
                     maxlength="20" 
                     pattern="[A-Za-z]+" 
                     placeholder="First Name"
@@ -115,7 +115,7 @@ last modified: 25-04-05
                 <label for="postcode">Postcode</label>
                 <!-- State -->
                 <select name="state" id="state" required>
-                    <option value="" id="select_defult"selected disabled>Select State</option>
+                    <option value="" class="select_defult" selected disabled>Select State</option>
                     <option value="VIC">VIC</option>
                     <option value="NSW">NSW</option>
                     <option value="QLD">QLD</option>
@@ -146,7 +146,7 @@ last modified: 25-04-05
                 name="email" 
                 id="email" 
                 placeholder="Email@Address"
-                required></td>
+                required>
                 <!-- Phone Number -->
                 <input 
                 type="text" 
@@ -158,11 +158,28 @@ last modified: 25-04-05
         </fieldset>
         <fieldset id="skill_field">
             <!-- Applicant Skills section -->
-            <legend>Required Technical Skills:</legend>
-            <!-- ADD SKILLS -->
-            <label for="skill1"><input class="checkbox" type="checkbox" id="skill1" name="skills[]" value="skill1" required>Skill1</label>
-            <label for="skill2"><input class="checkbox" type="checkbox" id="skill2" name="skills[]" value="skill2">Skill2</label>
-            <label for="skill3"><input class="checkbox" type="checkbox" id="skill3" name="skills[]" value="skill3">Skill3</label>
+            <legend>Required Technical Skills And Qualifications:</legend>
+            <!-- Checkboxes of Skills and Qualifications -->
+            <label for="basic"><input class="checkbox" type="checkbox" id="basic" name="skills[]" value="basic" required>Basic Computer Literacy</label>
+            <label for="b_it"><input class="checkbox" type="checkbox" id="b_it" name="skills[]" value="b_it">Bachelor&apos;s in IT</label>
+            <label for="advanced"><input class="checkbox" type="checkbox" id="advanced" name="skills[]" value="advanced">Advanced Computer Literacy</label>
+            <label for="b_cs"><input class="checkbox" type="checkbox" id="b_cs" name="skills[]" value="b_cs">Bachelor&apos;s in Computer Science</label>
+            <label for="people"><input class="checkbox" type="checkbox" id="people" name="skills[]" value="people">People Skills</label>
+            <label for="b_se"><input class="checkbox" type="checkbox" id="b_se" name="skills[]" value="b_se">Bachelor&apos;s in Software Engineering</label>
+            <label for="network_config"><input class="checkbox" type="checkbox" id="network_config" name="skills[]" value="network_config">Network Configuration</label>
+            <label for="b_hr"><input class="checkbox" type="checkbox" id="b_hr" name="skills[]" value="b_hr">Bachelor&apos;s in Human Resources</label>
+            <label for="network_troubleshooting"><input class="checkbox" type="checkbox" id="network_troubleshooting" name="skills[]" value="network_troubleshooting">Network Troubleshooting</label>
+            <label for="b_ba"><input class="checkbox" type="checkbox" id="b_ba" name="skills[]" value="b_ba">Bachelor&apos;s in Business Administration</label>
+            <label for="office"><input class="checkbox" type="checkbox" id="office" name="skills[]" value="office">Familiarity with Office 365</label>
+            <label for="ccna"><input class="checkbox" type="checkbox" id="ccna" name="skills[]" value="ccna">CCNA</label>
+            <label for="devops"><input class="checkbox" type="checkbox" id="devops" name="skills[]" value="devops">Familiarity with DevOps</label>
+            <label for="ccnp"><input class="checkbox" type="checkbox" id="ccnp" name="skills[]" value="ccnp">CCNP</label>
+            <label for="cloud"><input class="checkbox" type="checkbox" id="cloud" name="skills[]" value="cloud">Knowledge of Cloud Platforms</label>
+            <label for="cissp"><input class="checkbox" type="checkbox" id="cissp" name="skills[]" value="cissp">CISSP</label>
+            <label for="database"><input class="checkbox" type="checkbox" id="database" name="skills[]" value="database">Knowledge of Databases</label>
+            <label for="jncia"><input class="checkbox" type="checkbox" id="jncia" name="skills[]" value="jncia">JNCIA</label>
+            <label for="hrsoftware"><input class="checkbox" type="checkbox" id="hrsoftware" name="skills[]" value="hrsoftware">Experience with HR software</label>
+            <label for="hrcert"><input class="checkbox" type="checkbox" id="hrcert" name="skills[]" value="hrcert">HR certification</label>
         </fieldset>
         <fieldset id="language_field">
             <!-- Language proficency field -->
@@ -184,14 +201,14 @@ last modified: 25-04-05
         </fieldset>
         <fieldset id="otherskill_field">
             <!-- Text Area for additional Skills -->
-            <label for="otherskills">Other Technical Skills:</label>
+            <label id="otherskillslabel" for="otherskills">Other Technical Skills:</label>
             <textarea id="otherskills" name="otherskills" rows="5" cols="30" placeholder="Provide any other skills here"></textarea>
         </fieldset>
         <hr>
         <fieldset id="button_field">
             <!-- Form Submit and reset area -->
-            <input type="reset" id="reset" value="Clear Aplication"/>
-            <input type="submit" id="submit" value="Apply"/>
+            <input type="reset" id="reset" value="Clear Aplication">
+            <input type="submit" id="submit" value="Apply">
         </fieldset>
     </form>
     </main>
