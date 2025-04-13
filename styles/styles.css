@@ -173,6 +173,7 @@ fieldset {
     }
     div {
         display: grid;
+        grid-template-rows: min-content;
     }
 
 }
