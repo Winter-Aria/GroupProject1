@@ -61,34 +61,6 @@ h2{
 
 img { max-width: 100%; }
 
-.JobSection {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between; 
-    gap: 20px;
-    padding: 20px;
-}
-
-.JobSpan {
-    display: flex;
-    flex-direction: column; 
-    max-width: 60%; 
-}
-
-.JobImage {
-    width: 50%;
-    height: auto;
-    object-fit: cover;
-    margin-top: 150px; 
-    padding-right: 10px; 
-}
-
-.JobTitle {
-    text-align: center; 
-    width: 100%; 
-    margin: 0 auto;
-    font-size: 2em;
-}
 
 /* button hover effect */
 nav ul li, .hover-link {
@@ -191,63 +163,38 @@ video {
 /* Fieldsets */
 fieldset {
     display: grid;
-    grid-template: 20px 58px 20px 58px / 50% 50%;
-    column-gap: 40px;
-    padding-left: 10%;
-    padding-right: 15%;
-    padding-bottom: 20px;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1em;
     border: none;
     align-self: center;
-}
-#job_reference_number, #contact_fieldset {
-    grid-template: 20px 50px / 50% 50%;
-}
-#skill_field {
-    grid-template: repeat(10, 25px) / 50% 50%;
+    div, input:not([type=checkbox]), select {
+        width: 100%;
+        box-sizing: border-box;
+    }
 }
 #language_field {
-    grid-template: 25px 25px 25px 25px / 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 #otherskill_field {
-    grid-template: 20px 150px / 100%;
+    grid-template-columns: 1fr;
 }
 #button_field {
-    grid-template: 30px / 15% 1fr 1fr 1fr 15%;
-    column-gap: normal;
+    grid-template-columns: 1fr 1fr;
 }
-/* Fieldsets end */
-label {
-    align-self: center;
-}
-#otherskillslabel {
+/* fieldsets end */
+
+legend, #otherskillslabel {
     font-size: 1.4em;
 }
-legend {
-    font-size: 1.4em;
-}
-input {
+
+input, select {
     background-color: var(--pink1);
     border: 2px solid var(--dark2);
     border-radius: 6px;
-    padding: 10px 10px;
-    font-size: 1em;
-    height: 30px;
-}
-select {
-    background-color: var(--pink1);
-    height: 54px;
-    border: 2px solid var(--dark2);
-    border-radius: 6px;
-    padding: 10px 10px;
+    padding: 1em;
     font-size: 1em;
 }
-select:required:invalid {
-    color: var(--phgray);
-}
-input[type="date"]:invalid {
-    color: var(--phgray);
-}
-.select_defult {
+select:invalid, input:invalid {
     color: var(--phgray);
 }
 textarea{
@@ -256,41 +203,28 @@ textarea{
     border-radius: 6px;
     width: 100%;
     resize: none;
-    grid-column-end: 2;
-}
-#dob {
-    grid-column: 1;
-}
-#job_reference {
-    grid-column: 1;
-}
-#otherskills {
-    grid-column-end: 2;
-}
-.checkbox {
-    height: auto;
 }
 
 #button_field input {
     transition: transform 0.2s;
-    justify-content: center;
-    grid-row-start: 2;
 }
-
 #button_field input:hover {
     transform: scale(1.03);
 }
-#reset {
-    grid-column: 2;
-    height: auto;
-}
-#submit {
-    grid-column: 4;
-    height: auto;
+
+input[type="submit"] {
     background-color: var(--dark1);
     border-color: var(--dark1);
     color: var(--lightblue);
 }
+
+@media (max-width:500px) {
+    fieldset, #language_field, #button_field {
+        grid-template-columns: 1fr;
+        row-gap: 10px;
+    }
+}
+/* End Apply.html */
 
 #reviews {
     div {
