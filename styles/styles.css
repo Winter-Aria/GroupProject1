@@ -360,6 +360,9 @@ figure {
     td:hover {
         background-color: #c0a1b7;
     }
+    th, td {
+        border: 1px solid gray;
+    }
 }
 
 #service_links {
