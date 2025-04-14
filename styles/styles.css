@@ -68,6 +68,9 @@ nav ul li, .hover-link {
     transition: transform 0.2s;
     & a {
         transition: color 0.2s;
+        align-items: center;
+        display: flex;
+        padding: 0;
     }
 }
 nav ul li:hover, .hover-link:hover {
