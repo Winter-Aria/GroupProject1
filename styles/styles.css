@@ -421,4 +421,5 @@ to allow for usability on small screens */
     background-repeat:repeat;
     z-index: 0;
 }
-header, main, footer { z-index: 1; }
+header, footer { z-index: 2; }
+main { z-index: 1; }
