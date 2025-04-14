@@ -59,6 +59,10 @@ h2{
     font-weight: 400;
 }
 
+#page_title{f ont: 'arya-double', Helvetica, sans-serif;
+    color: var(--dark1);
+    margin-top: 0; }
+
 img { max-width: 100%; }
 
 
