@@ -59,7 +59,7 @@ h2{
     font-weight: 400;
 }
 
-#page_title{f ont: 'arya-double', Helvetica, sans-serif;
+#page_title{font: 'arya-double', Helvetica, sans-serif;
     color: var(--dark1);
     margin-top: 0; }
 
@@ -182,6 +182,24 @@ fieldset {
     }
 
 }
+#genderfield {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    padding: 0%;
+    & div {
+        display: block;
+        grid-template-columns: 1fr 1fr;
+        height: 1.5em;
+        width: 10em;
+        column-gap: 0px;
+        & input[type="radio"] {
+            height: 1em;
+            width: 1em;
+        }
+    }
+}
+
 #language_field {
     grid-template-columns: 1fr 1fr 1fr;
 }
@@ -196,6 +214,9 @@ fieldset {
 legend, #otherskillslabel {
     font-size: 1.4em;
 }
+#genderlegend {
+    font-size: 1em;
+}
 
 input, select {
     background-color: var(--pink1);
@@ -204,7 +225,7 @@ input, select {
     padding: 1em;
     font-size: 1em;
 }
-select:invalid, input:invalid {
+select:invalid, input[type="date"]:invalid {
     color: var(--phgray);
 }
 textarea{
@@ -227,6 +248,7 @@ input[type="submit"] {
     border-color: var(--dark1);
     color: var(--lightblue);
 }
+
 
 @media (max-width:500px) {
     fieldset, #language_field, #button_field {
