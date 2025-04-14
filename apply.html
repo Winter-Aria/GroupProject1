@@ -289,9 +289,9 @@ last modified: 25-04-05
                             type="text" 
                             name="phone" 
                             id="phone" 
-                            pattern="" 
-                            placeholder="+61 000 000 000"
-                            required><!-- !to do! fix regex -->
+                            pattern="(\+61\s?4|04)\d{2}(\s?\d{3}){2}" 
+                            placeholder="+61 400 000 000"
+                            required>
                     </div>
                 </fieldset>
                 <fieldset id="skill_field">
