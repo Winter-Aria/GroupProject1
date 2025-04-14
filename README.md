@@ -1,3 +1,3 @@
-## GitHub views branches as pull requests. Do NOT accept them, it will merge the branches.
+COS10026 Web Technology Project - Aria, Oscar, Noah, Callahan
 <br>
-(https://unknownhamlyn.github.io/unknownhamlyn/index.html
+https://winter-aria.github.io/GroupProject1/
