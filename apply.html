@@ -123,7 +123,7 @@ last modified: 25-04-05
             </div>
             </fieldset>
         </fieldset>
-        <fieldset>
+        <fieldset id="residency">
             <!-- Applicant residency details -->
             <legend>Residency:</legend>
             <!-- Street Address -->
@@ -169,7 +169,7 @@ last modified: 25-04-05
                 <!-- and there is a preset value that gets passed through if the user doesnt provide an input -->
                 <!-- this is does to fulfill the criterion that says every option bar the otherskills has to be required OR have a preset value -->
                 <!-- NSW postcode -->
-                <label class="postcode" for="pNSW">Postcode</label>
+                <label id="lNSW" class="postcode" for="pNSW">Postcode</label>
                 <input 
                     type="text" 
                     name="postcode" 
@@ -179,7 +179,7 @@ last modified: 25-04-05
                     pattern="(1\d{3})|(2([0-5]\d{2})|(619)|(6[2-9]\d)|([7-8]\d{2})|(92[1-9])|9[3-9]\d)" 
                     placeholder="1000">
                 <!-- VIC postcode -->
-                <label class="postcode" for="pVIC">Postcode</label>
+                <label id="lVIC" class="postcode" for="pVIC">Postcode</label>
                 <input 
                     type="text" 
                     name="postcode" 
@@ -189,7 +189,7 @@ last modified: 25-04-05
                     pattern="(3\d([0-8]\d)|(9[0-6]))|(8\d{3})" 
                     placeholder="3000">
                 <!-- QLD postcode -->
-                <label class="postcode" for="pQLD">Postcode</label>
+                <label id="lQLD" class="postcode" for="pQLD">Postcode</label>
                 <input 
                     type="text" 
                     name="postcode" 
@@ -199,7 +199,7 @@ last modified: 25-04-05
                     pattern="(4|9)(\d{3})" 
                     placeholder="4000">
                 <!-- SA postcode -->
-                <label class="postcode" for="pSA">Postcode</label>
+                <label id="lSA" class="postcode" for="pSA">Postcode</label>
                 <input 
                     type="text" 
                     name="postcode" 
@@ -209,7 +209,7 @@ last modified: 25-04-05
                     pattern="(5\d{3})" 
                     placeholder="5000">
                 <!-- WA postcode -->
-                <label class="postcode" for="pWA">Postcode</label>
+                <label id="lWA" class="postcode" for="pWA">Postcode</label>
                 <input 
                     type="text" 
                     name="postcode" 
@@ -219,7 +219,7 @@ last modified: 25-04-05
                     pattern="(6([0-6]\d{2})|(7\d[0-7])|([8-9]\d{2}))" 
                     placeholder="6000">
                 <!-- TAS postcode -->
-                <label class="postcode" for="pTAS">Postcode</label>
+                <label id="lTAS" class="postcode" for="pTAS">Postcode</label>
                 <input 
                     type="text" 
                     name="postcode" 
@@ -229,7 +229,7 @@ last modified: 25-04-05
                     pattern="(7\d{3})" 
                     placeholder="7000">
                 <!-- NT postcode -->
-                <label class="postcode" for="pNT">Postcode</label>
+                <label id="lNT" class="postcode" for="pNT">Postcode</label>
                 <input 
                     type="text" 
                     name="postcode" 
@@ -239,7 +239,7 @@ last modified: 25-04-05
                     pattern="(0[8-9]\d{2})" 
                     placeholder="0000">
                 <!-- ACT postcode -->
-                <label class="postcode" for="pACT">Postcode</label>
+                <label id="lACT" class="postcode" for="pACT">Postcode</label>
                 <input 
                     type="text" 
                     name="postcode" 
