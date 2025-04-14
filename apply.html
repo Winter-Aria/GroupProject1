@@ -180,7 +180,6 @@ last modified: 25-04-05
                             disabled>
                         <!-- NSW postcode -->
                         <label id="lNSW" class="postcode" for="pNSW">Postcode</label>
-                        <input name="NSW" value="1000" hidden>
                         <input 
                             type="text" 
                             name="NSW" 
@@ -188,10 +187,10 @@ last modified: 25-04-05
                             class="postcode"
                             maxlength="4" 
                             pattern="(1\d{3})|(2([0-5]\d{2})|(619)|(6[2-9]\d)|([7-8]\d{2})|(92[1-9])|9[3-9]\d)" 
+                            value="1000"
                             placeholder="1000">
                         <!-- VIC postcode -->
                         <label id="lVIC" class="postcode" for="pVIC">Postcode</label>
-                        <input name="VIC" value="3000" hidden>
                         <input 
                             type="text" 
                             name="VIC" 
@@ -199,10 +198,10 @@ last modified: 25-04-05
                             class="postcode"
                             maxlength="4" 
                             pattern="(3\d([0-8]\d)|(9[0-6]))|(8\d{3})" 
+                            value="3000"
                             placeholder="3000">
                         <!-- QLD postcode -->
                         <label id="lQLD" class="postcode" for="pQLD">Postcode</label>
-                        <input name="QLD" value="4000" hidden>
                         <input 
                             type="text" 
                             name="QLD" 
@@ -210,10 +209,10 @@ last modified: 25-04-05
                             class="postcode"
                             maxlength="4" 
                             pattern="(4|9)(\d{3})" 
+                            value="4000"
                             placeholder="4000">
                         <!-- SA postcode -->
                         <label id="lSA" class="postcode" for="pSA">Postcode</label>
-                        <input name="SA" value="5000" hidden>
                         <input 
                             type="text" 
                             name="SA" 
@@ -221,10 +220,10 @@ last modified: 25-04-05
                             class="postcode"
                             maxlength="4" 
                             pattern="(5\d{3})" 
+                            value="5000"
                             placeholder="5000">
                         <!-- WA postcode -->
                         <label id="lWA" class="postcode" for="pWA">Postcode</label>
-                        <input name="WA" value="6000" hidden>
                         <input 
                             type="text" 
                             name="WA" 
@@ -232,10 +231,10 @@ last modified: 25-04-05
                             class="postcode"
                             maxlength="4" 
                             pattern="(6([0-6]\d{2})|(7\d[0-7])|([8-9]\d{2}))" 
+                            value="6000"
                             placeholder="6000">
                         <!-- TAS postcode -->
                         <label id="lTAS" class="postcode" for="pTAS">Postcode</label>
-                        <input name="TAS" value="7000" hidden>
                         <input 
                             type="text" 
                             name="TAS" 
@@ -243,10 +242,10 @@ last modified: 25-04-05
                             class="postcode"
                             maxlength="4" 
                             pattern="(7\d{3})" 
+                            value="7000"
                             placeholder="7000">
                         <!-- NT postcode -->
                         <label id="lNT" class="postcode" for="pNT">Postcode</label>
-                        <input name="NT" value="0000" hidden>
                         <input 
                             type="text" 
                             name="NT" 
@@ -254,10 +253,10 @@ last modified: 25-04-05
                             class="postcode"
                             maxlength="4" 
                             pattern="(0[8-9]\d{2})" 
-                            placeholder="0000">
+                            value="0800"
+                            placeholder="0800">
                         <!-- ACT postcode -->
                         <label id="lACT" class="postcode" for="pACT">Postcode</label>
-                        <input name="ACT" value="0200" hidden>
                         <input 
                             type="text" 
                             name="ACT" 
@@ -265,6 +264,7 @@ last modified: 25-04-05
                             class="postcode"
                             maxlength="4" 
                             pattern="(02\d{2})|(26(0\d)|(1[0-8]))" 
+                            value="0200"
                             placeholder="0200"> 
                     </div>
                 </fieldset>
@@ -289,9 +289,9 @@ last modified: 25-04-05
                             type="text" 
                             name="phone" 
                             id="phone" 
-                            pattern="(((\+61\s?)|0)?(4(\d{2})\s?)((\d{3})\s?){2})|((0?4\s)?(\d{4}\s?\d{4}))"
+                            pattern="" 
                             placeholder="+61 000 000 000"
-                            required>
+                            required><!-- !to do! fix regex -->
                     </div>
                 </fieldset>
                 <fieldset id="skill_field">
