@@ -388,5 +388,6 @@ to allow for usability on small screens */
     height: 100vh;
     position: fixed;
     background-repeat:repeat;
-    z-index: -1;
+    z-index: 0;
 }
+header, main, footer { z-index: 1; }
