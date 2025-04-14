@@ -375,12 +375,6 @@ to allow for usability on small screens */
     #header-email { margin: 0; }
 }
 
-@media (prefers-reduced-motion) {
-    video {
-        display: none;
-    }
-}
-
 .Background_Image {
     background-image: url(../images/background_image.png);
     background-size: 20%;
