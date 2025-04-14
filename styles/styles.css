@@ -229,7 +229,7 @@ input, select {
 select:invalid, input[type="date"]:invalid, option:disabled {
     color: var(--phgray);
 }
-/* Postcodes */
+/* Dynamic Postcodes for each states */
 .postcode {
     display: none;
 }
