@@ -47,216 +47,218 @@ last modified: 25-04-05
     </header>
 
     <main>
-    <h1>Join Our Team</h1>
-    <hr>
-    <!-- Job application form initiator -->
-    <form method="post" action="http://mercury.swin.edu.au/it000000/formtest.php">
-        <fieldset id="job_reference_number">
-            <!-- Job Reference Number Dropdown selection section -->
-            <legend>Job Reference Number:</legend>
-            <div>
-                <label for="job_reference">Select Reference Number</label>
-                <!-- Job Reference Number -->
-                <select name="job_reference" id="job_reference" required>
-                    <option value="" class="select_defult" selected disabled>Please Select Reference Number</option>
-                    <!-- Job Refference Numbers-->
-                    <option value="BA113">BA113</option>
-                    <option value="AB232">AB232</option>
-                    <option value="D1337">D1337</option>
-                    <option value="HE451">HE451</option>
-                </select>
-            </div>
-        </fieldset>
-        <fieldset>
-            <!-- Aplicant personal details section -->
-            <legend>Applicant Details:</legend>
-            <!-- First Name -->
-            <div>
-                <label for="firstname">First Name</label>
-                <input 
-                    type="text" 
-                    name="firstname" 
-                    id="firstname"
-                    maxlength="20" 
-                    pattern="[A-Za-z]+" 
-                    placeholder="First Name"
-                    required>
-            </div>
-            <!-- Last Name -->
-            <div>
-                <label for="lastname">Last Name</label>
-                <input 
-                    type="text" 
-                    name="lastname" 
-                    id="lastname" 
-                    maxlength="20" 
-                    pattern="[A-Za-z]+"
-                    placeholder="Last Name"
-                    required>
-            </div>
-            <!-- Date of Birth -->
-            <div>
-                <label for="dob">Date of Birth</label>
-                <input 
-                    type="date" 
-                    name="dob" 
-                    id="dob" 
-                    required>
-            </div>
-            <fieldset id="genderfield">
-            <legend id="genderlegend">Gender</legend>
-            <div>
-                <input type="radio" name="gender" id="female" value="female">
-                <label for="female">Female</label>
-            </div>
-            <div>
-                <input type="radio" name="gender" id="male" value="male">
-                <label for="male">Male</label>
-            </div>
-            <div>
-                <input type="radio" name="gender" id="prefernot" value="prefernot" checked="checked">
-                <label for="prefernot">Prefer Not to Say</label>
-            </div>
-            <div>
-                <input type="radio" name="gender" id="other" value="other">
-                <label for="other">Other</label>
-            </div>
-            </fieldset>
-        </fieldset>
-        <fieldset>
-            <!-- Applicant residency details -->
-            <legend>Residency:</legend>
-            <!-- Street Address -->
-            <div>
-                <label for="address">Street Address</label>
-                <input
-                    type="text" 
-                    name="address" 
-                    id="address" 
-                    maxlength="40" 
-                    placeholder="Street Address"
-                    required>
-            </div>
-            <!-- Suburb -->
-            <div>
-                <label for="suburb">Suburb</label>
-                <input 
-                    type="text" 
-                    name="suburb" 
-                    id="suburb" 
-                    maxlength="40" 
-                    placeholder="Suburb"
-                    required>
-            </div>
-            <!-- State -->
-            <div>
-                <label for="state">State</label>
-                <select name="state" id="state" required>
-                    <option value="" class="select_defult" selected disabled>Select State</option>
-                    <option value="VIC">VIC</option>
-                    <option value="NSW">NSW</option>
-                    <option value="QLD">QLD</option>
-                    <option value="NT">NT</option>
-                    <option value="WA">WA</option>
-                    <option value="SA">SA</option>
-                    <option value="TAS">TAS</option>
-                    <option value="ACT">ACT</option>
-                </select>
-            </div>
-            <!-- Postcode -->
-            <div>
-                <label for="postcode">Postcode</label>
-                <input 
-                    type="text" 
-                    name="postcode" 
-                    id="postcode" 
-                    maxlength="4" 
-                    pattern="\d{4}" 
-                    placeholder="Postcode e.g. 0000"
-                    required>
-                    
-            </div>
-        </fieldset>
-        <fieldset id="contact_fieldset">
-            <!-- Applicant contact details -->
-            <legend>Contact Details:</legend>
-            <!-- Email Address -->
-            <div>
-                <label for="email">Email Address</label>
-                <input 
-                    type="email" 
-                    name="email" 
-                    id="email" 
-                    placeholder="Email@Address"
-                    required>
-            </div>
-            <!-- Phone Number -->
-            <div>
-                <label for="phone">Phone Number</label>
-                <input 
-                    type="text" 
-                    name="phone" 
-                    id="phone" 
-                    pattern="(((\+61\s?)|0)?((\d{3})\s?){3})|(\d{4}\s?\d{4})"
-                    placeholder="+61 000 000 000"
-                    required>
-            </div>
-        </fieldset>
-        <fieldset id="skill_field">
-            <!-- Applicant Skills section -->
-            <legend>Required Technical Skills And Qualifications:</legend>
-            <!-- Checkboxes of Skills and Qualifications -->
-            <label for="basic"><input class="checkbox" type="checkbox" id="basic" name="skills[]" value="basic" required>Basic Computer Literacy</label>
-            <label for="b_it"><input class="checkbox" type="checkbox" id="b_it" name="skills[]" value="b_it">Bachelor&apos;s in IT</label>
-            <label for="advanced"><input class="checkbox" type="checkbox" id="advanced" name="skills[]" value="advanced">Advanced Computer Literacy</label>
-            <label for="b_cs"><input class="checkbox" type="checkbox" id="b_cs" name="skills[]" value="b_cs">Bachelor&apos;s in Computer Science</label>
-            <label for="people"><input class="checkbox" type="checkbox" id="people" name="skills[]" value="people">People Skills</label>
-            <label for="b_se"><input class="checkbox" type="checkbox" id="b_se" name="skills[]" value="b_se">Bachelor&apos;s in Software Engineering</label>
-            <label for="network_config"><input class="checkbox" type="checkbox" id="network_config" name="skills[]" value="network_config">Network Configuration</label>
-            <label for="b_hr"><input class="checkbox" type="checkbox" id="b_hr" name="skills[]" value="b_hr">Bachelor&apos;s in Human Resources</label>
-            <label for="network_troubleshooting"><input class="checkbox" type="checkbox" id="network_troubleshooting" name="skills[]" value="network_troubleshooting">Network Troubleshooting</label>
-            <label for="b_ba"><input class="checkbox" type="checkbox" id="b_ba" name="skills[]" value="b_ba">Bachelor&apos;s in Business Admin</label>
-            <label for="office"><input class="checkbox" type="checkbox" id="office" name="skills[]" value="office">Familiarity with Office 365</label>
-            <label for="ccna"><input class="checkbox" type="checkbox" id="ccna" name="skills[]" value="ccna">CCNA</label>
-            <label for="devops"><input class="checkbox" type="checkbox" id="devops" name="skills[]" value="devops">Familiarity with DevOps</label>
-            <label for="ccnp"><input class="checkbox" type="checkbox" id="ccnp" name="skills[]" value="ccnp">CCNP</label>
-            <label for="cloud"><input class="checkbox" type="checkbox" id="cloud" name="skills[]" value="cloud">Knowledge of Cloud Platforms</label>
-            <label for="cissp"><input class="checkbox" type="checkbox" id="cissp" name="skills[]" value="cissp">CISSP</label>
-            <label for="database"><input class="checkbox" type="checkbox" id="database" name="skills[]" value="database">Knowledge of Databases</label>
-            <label for="jncia"><input class="checkbox" type="checkbox" id="jncia" name="skills[]" value="jncia">JNCIA</label>
-            <label for="hrsoftware"><input class="checkbox" type="checkbox" id="hrsoftware" name="skills[]" value="hrsoftware">Experience with HR software</label>
-            <label for="hrcert"><input class="checkbox" type="checkbox" id="hrcert" name="skills[]" value="hrcert">HR certification</label>
-        </fieldset>
-        <fieldset id="language_field">
-            <!-- Language proficency field -->
-            <legend>Language Proficiencies:</legend>
-            <!-- Languages -->
-            <label for="python"><input class="checkbox" type="checkbox" id="python" name="languages[]" value="python">Python</label>
-            <label for="ruby"><input class="checkbox" type="checkbox" id="ruby" name="languages[]" value="ruby">Ruby</label>
-            <label for="java"><input class="checkbox" type="checkbox" id="java" name="languages[]" value="java">Java</label>
-            <label for="javascript"><input class="checkbox" type="checkbox" id="javascript" name="languages[]" value="javascript">JavaScript</label>
-            <label for="c#"><input class="checkbox" type="checkbox" id="c#" name="languages[]" value="c#">C#</label>
-            <label for="c++"><input class="checkbox" type="checkbox" id="c++" name="languages[]" value="c++">C++</label>
-            <label for="html"><input class="checkbox" type="checkbox" id="html" name="languages[]" value="html">HTML</label>
-            <label for="css"><input class="checkbox" type="checkbox" id="css" name="languages[]" value="css">CSS</label>
-            <label for="php"><input class="checkbox" type="checkbox" id="php" name="languages[]" value="php">PHP</label>
-            <label for="perl"><input class="checkbox" type="checkbox" id="perl" name="languages[]" value="perl">Perl</label>
-            <label for="assembly"><input class="checkbox" type="checkbox" id="assembly" name="languages[]" value="assembly">Assembly</label>
-            <label for="dreambird"><input class="checkbox" type="checkbox" id="dreambird" name="languages[]" value="dreambrid">Dreambird</label>
-
-        </fieldset>
-        <fieldset id="otherskill_field">
-            <!-- Text Area for additional Skills -->
-            <label id="otherskillslabel" for="otherskills">Other Technical Skills:</label>
-            <textarea id="otherskills" name="otherskills" rows="5" cols="30" placeholder="Provide any other skills here"></textarea>
-        </fieldset>
-        <hr>
-        <fieldset id="button_field">
-            <!-- Form Submit and reset area -->
-            <input type="reset" id="reset" value="Clear Application">
-            <input type="submit" id="submit" value="Apply">
-        </fieldset>
-    </form>
+        <article>
+            <h1>Join Our Team</h1>
+            <hr>
+            <!-- Job application form initiator -->
+            <form method="post" action="http://mercury.swin.edu.au/it000000/formtest.php">
+                <fieldset id="job_reference_number">
+                    <!-- Job Reference Number Dropdown selection section -->
+                    <legend>Job Reference Number:</legend>
+                    <div>
+                        <label for="job_reference">Select Reference Number</label>
+                        <!-- Job Reference Number -->
+                        <select name="job_reference" id="job_reference" required>
+                            <option value="" class="select_defult" selected disabled>Please Select Reference Number</option>
+                            <!-- Job Refference Numbers-->
+                            <option value="BA113">BA113</option>
+                            <option value="AB232">AB232</option>
+                            <option value="D1337">D1337</option>
+                            <option value="HE451">HE451</option>
+                        </select>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <!-- Aplicant personal details section -->
+                    <legend>Applicant Details:</legend>
+                    <!-- First Name -->
+                    <div>
+                        <label for="firstname">First Name</label>
+                        <input 
+                            type="text" 
+                            name="firstname" 
+                            id="firstname"
+                            maxlength="20" 
+                            pattern="[A-Za-z]+" 
+                            placeholder="First Name"
+                            required>
+                    </div>
+                    <!-- Last Name -->
+                    <div>
+                        <label for="lastname">Last Name</label>
+                        <input 
+                            type="text" 
+                            name="lastname" 
+                            id="lastname" 
+                            maxlength="20" 
+                            pattern="[A-Za-z]+"
+                            placeholder="Last Name"
+                            required>
+                    </div>
+                    <!-- Date of Birth -->
+                    <div>
+                        <label for="dob">Date of Birth</label>
+                        <input 
+                            type="date" 
+                            name="dob" 
+                            id="dob" 
+                            required>
+                    </div>
+                    <fieldset id="genderfield">
+                    <legend id="genderlegend">Gender</legend>
+                    <div>
+                        <input type="radio" name="gender" id="female" value="female">
+                        <label for="female">Female</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="gender" id="male" value="male">
+                        <label for="male">Male</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="gender" id="prefernot" value="prefernot" checked="checked">
+                        <label for="prefernot">Prefer Not to Say</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="gender" id="other" value="other">
+                        <label for="other">Other</label>
+                    </div>
+                    </fieldset>
+                </fieldset>
+                <fieldset>
+                    <!-- Applicant residency details -->
+                    <legend>Residency:</legend>
+                    <!-- Street Address -->
+                    <div>
+                        <label for="address">Street Address</label>
+                        <input
+                            type="text" 
+                            name="address" 
+                            id="address" 
+                            maxlength="40" 
+                            placeholder="Street Address"
+                            required>
+                    </div>
+                    <!-- Suburb -->
+                    <div>
+                        <label for="suburb">Suburb</label>
+                        <input 
+                            type="text" 
+                            name="suburb" 
+                            id="suburb" 
+                            maxlength="40" 
+                            placeholder="Suburb"
+                            required>
+                    </div>
+                    <!-- State -->
+                    <div>
+                        <label for="state">State</label>
+                        <select name="state" id="state" required>
+                            <option value="" class="select_defult" selected disabled>Select State</option>
+                            <option value="VIC">VIC</option>
+                            <option value="NSW">NSW</option>
+                            <option value="QLD">QLD</option>
+                            <option value="NT">NT</option>
+                            <option value="WA">WA</option>
+                            <option value="SA">SA</option>
+                            <option value="TAS">TAS</option>
+                            <option value="ACT">ACT</option>
+                        </select>
+                    </div>
+                    <!-- Postcode -->
+                    <div>
+                        <label for="postcode">Postcode</label>
+                        <input 
+                            type="text" 
+                            name="postcode" 
+                            id="postcode" 
+                            maxlength="4" 
+                            pattern="\d{4}" 
+                            placeholder="Postcode e.g. 0000"
+                            required>
+                            
+                    </div>
+                </fieldset>
+                <fieldset id="contact_fieldset">
+                    <!-- Applicant contact details -->
+                    <legend>Contact Details:</legend>
+                    <!-- Email Address -->
+                    <div>
+                        <label for="email">Email Address</label>
+                        <input 
+                            type="email" 
+                            name="email" 
+                            id="email" 
+                            placeholder="Email@Address"
+                            required>
+                    </div>
+                    <!-- Phone Number -->
+                    <div>
+                        <label for="phone">Phone Number</label>
+                        <input 
+                            type="text" 
+                            name="phone" 
+                            id="phone" 
+                            pattern="(((\+61\s?)|0)?((\d{3})\s?){3})|(\d{4}\s?\d{4})"
+                            placeholder="+61 000 000 000"
+                            required>
+                    </div>
+                </fieldset>
+                <fieldset id="skill_field">
+                    <!-- Applicant Skills section -->
+                    <legend>Required Technical Skills And Qualifications:</legend>
+                    <!-- Checkboxes of Skills and Qualifications -->
+                    <label for="basic"><input class="checkbox" type="checkbox" id="basic" name="skills[]" value="basic" required>Basic Computer Literacy</label>
+                    <label for="b_it"><input class="checkbox" type="checkbox" id="b_it" name="skills[]" value="b_it">Bachelor&apos;s in IT</label>
+                    <label for="advanced"><input class="checkbox" type="checkbox" id="advanced" name="skills[]" value="advanced">Advanced Computer Literacy</label>
+                    <label for="b_cs"><input class="checkbox" type="checkbox" id="b_cs" name="skills[]" value="b_cs">Bachelor&apos;s in Computer Science</label>
+                    <label for="people"><input class="checkbox" type="checkbox" id="people" name="skills[]" value="people">People Skills</label>
+                    <label for="b_se"><input class="checkbox" type="checkbox" id="b_se" name="skills[]" value="b_se">Bachelor&apos;s in Software Engineering</label>
+                    <label for="network_config"><input class="checkbox" type="checkbox" id="network_config" name="skills[]" value="network_config">Network Configuration</label>
+                    <label for="b_hr"><input class="checkbox" type="checkbox" id="b_hr" name="skills[]" value="b_hr">Bachelor&apos;s in Human Resources</label>
+                    <label for="network_troubleshooting"><input class="checkbox" type="checkbox" id="network_troubleshooting" name="skills[]" value="network_troubleshooting">Network Troubleshooting</label>
+                    <label for="b_ba"><input class="checkbox" type="checkbox" id="b_ba" name="skills[]" value="b_ba">Bachelor&apos;s in Business Admin</label>
+                    <label for="office"><input class="checkbox" type="checkbox" id="office" name="skills[]" value="office">Familiarity with Office 365</label>
+                    <label for="ccna"><input class="checkbox" type="checkbox" id="ccna" name="skills[]" value="ccna">CCNA</label>
+                    <label for="devops"><input class="checkbox" type="checkbox" id="devops" name="skills[]" value="devops">Familiarity with DevOps</label>
+                    <label for="ccnp"><input class="checkbox" type="checkbox" id="ccnp" name="skills[]" value="ccnp">CCNP</label>
+                    <label for="cloud"><input class="checkbox" type="checkbox" id="cloud" name="skills[]" value="cloud">Knowledge of Cloud Platforms</label>
+                    <label for="cissp"><input class="checkbox" type="checkbox" id="cissp" name="skills[]" value="cissp">CISSP</label>
+                    <label for="database"><input class="checkbox" type="checkbox" id="database" name="skills[]" value="database">Knowledge of Databases</label>
+                    <label for="jncia"><input class="checkbox" type="checkbox" id="jncia" name="skills[]" value="jncia">JNCIA</label>
+                    <label for="hrsoftware"><input class="checkbox" type="checkbox" id="hrsoftware" name="skills[]" value="hrsoftware">Experience with HR software</label>
+                    <label for="hrcert"><input class="checkbox" type="checkbox" id="hrcert" name="skills[]" value="hrcert">HR certification</label>
+                </fieldset>
+                <fieldset id="language_field">
+                    <!-- Language proficency field -->
+                    <legend>Language Proficiencies:</legend>
+                    <!-- Languages -->
+                    <label for="python"><input class="checkbox" type="checkbox" id="python" name="languages[]" value="python">Python</label>
+                    <label for="ruby"><input class="checkbox" type="checkbox" id="ruby" name="languages[]" value="ruby">Ruby</label>
+                    <label for="java"><input class="checkbox" type="checkbox" id="java" name="languages[]" value="java">Java</label>
+                    <label for="javascript"><input class="checkbox" type="checkbox" id="javascript" name="languages[]" value="javascript">JavaScript</label>
+                    <label for="c#"><input class="checkbox" type="checkbox" id="c#" name="languages[]" value="c#">C#</label>
+                    <label for="c++"><input class="checkbox" type="checkbox" id="c++" name="languages[]" value="c++">C++</label>
+                    <label for="html"><input class="checkbox" type="checkbox" id="html" name="languages[]" value="html">HTML</label>
+                    <label for="css"><input class="checkbox" type="checkbox" id="css" name="languages[]" value="css">CSS</label>
+                    <label for="php"><input class="checkbox" type="checkbox" id="php" name="languages[]" value="php">PHP</label>
+                    <label for="perl"><input class="checkbox" type="checkbox" id="perl" name="languages[]" value="perl">Perl</label>
+                    <label for="assembly"><input class="checkbox" type="checkbox" id="assembly" name="languages[]" value="assembly">Assembly</label>
+                    <label for="dreambird"><input class="checkbox" type="checkbox" id="dreambird" name="languages[]" value="dreambrid">Dreambird</label>
+        
+                </fieldset>
+                <fieldset id="otherskill_field">
+                    <!-- Text Area for additional Skills -->
+                    <label id="otherskillslabel" for="otherskills">Other Technical Skills:</label>
+                    <textarea id="otherskills" name="otherskills" rows="5" cols="30" placeholder="Provide any other skills here"></textarea>
+                </fieldset>
+                <hr>
+                <fieldset id="button_field">
+                    <!-- Form Submit and reset area -->
+                    <input type="reset" id="reset" value="Clear Application">
+                    <input type="submit" id="submit" value="Apply">
+                </fieldset>
+            </form>
+        </article>
     </main>
     <footer>
         <h2>Visit Our</h2>

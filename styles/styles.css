@@ -32,7 +32,7 @@ last modified: 25-04-06
     word-spacing: 0.05em; 
 }
 
-/* background colour */
+/* begin global structure */
 body {
     background-color:var(--pink2);
     margin: 0px;
@@ -41,13 +41,12 @@ body {
     justify-content: space-between;
     min-height: 100vh;
 }
-/*  */
-main{
+article {
     max-width: 800px;
     width: 100%;
     box-sizing: border-box;
     flex: auto;
-    margin: auto;
+    margin: 0;
     background-color: var(--pink1);
     padding: 2em;
 }
@@ -56,15 +55,12 @@ h1 {
     color: var(--dark1);
     margin-top: 0;
 }
-
 h2{ 
     font-family: 'apparat-thin', Verdana, sans-serif;
     font-style: normal;
     font-weight: 400;
 }
-
 img { max-width: 100%; }
-
 
 /* button hover effect */
 nav ul li, .hover-link {
@@ -158,14 +154,48 @@ footer {
     font-size: clamp(2px, 3vw, 20px); /* responsive sizing to prevent text from covering links */
 }
 
-/* scale video on index.html */
+/* tile a background image across the website */
+.Background_Image {
+    background-image: url(../images/background_image.png);
+    background-size: 20%;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-repeat:repeat;
+    z-index: 0;
+}
+/* ensures correct ordering for box shadows and background image */
+header, footer { z-index: 2; }
+main { z-index: 1; }
+/* end global structure */
+
+/* Index.html */
+/* scale video */
 video {
     width: 100%;
     height: auto;
 }
+#reviews {
+    div {
+        display: flex;
+        width: fit-content;
+        gap: 2em;
+        div {
+            width: 100vw;
+            max-width: 370px;
+            display: block;
+        }   
+        blockquote {
+            margin: 0 0 0 1em;
+        }
+    }
+    overflow-x: scroll;
+    overflow-y: visible;
+}
+/* end Index.html */
 
 /* Apply.html */
-/* Fieldsets */
+/* fieldsets */
 fieldset {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -250,7 +280,6 @@ input[type="submit"] {
     color: var(--lightblue);
 }
 
-
 @media (max-width:500px) {
     fieldset, #language_field, #button_field {
         grid-template-columns: 1fr;
@@ -258,24 +287,6 @@ input[type="submit"] {
     }
 }
 /* End Apply.html */
-
-#reviews {
-    div {
-        display: flex;
-        width: fit-content;
-        gap: 2em;
-        div {
-            width: 100vw;
-            max-width: 370px;
-            display: block;
-        }   
-        blockquote {
-            margin: 0 0 0 1em;
-        }
-    }
-    overflow-x: scroll;
-    overflow-y: visible;
-}
 
 aside {
     border: 2px solid #251927;
@@ -294,7 +305,8 @@ dd {
     margin-bottom: 0.5em;
 }
 
-/* scale image figure in about.html */
+/* start about.html */
+/* scale and position image figure */
 figure {
     background-color: var(--cardpink);
     border-radius: 10px;
@@ -307,6 +319,7 @@ figure {
     }
 }
 
+/* member details cards */
 #member-details {
     list-style-type: none;
     display: flex;
@@ -334,6 +347,7 @@ figure {
     }
 }
 
+/* member interests table */
 #member-interests {
     justify-self: center;
     td {
@@ -348,6 +362,7 @@ figure {
     }
 }
 
+/* services.html navbar */
 #service_links {
     position: sticky;
     top: 10px;
@@ -379,6 +394,7 @@ figure {
 details {
     cursor: pointer;
 }
+/* end about.hmtl */
 
 /* place job images to the side */
 .JobImage {
@@ -412,14 +428,24 @@ to allow for usability on small screens */
     #header-email { margin: 0; }
 }
 
-.Background_Image {
-    background-image: url(../images/background_image.png);
-    background-size: 20%;
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    background-repeat:repeat;
-    z-index: 0;
+/* aside stiling tmep name */
+aside {
+    height: fit-content;
+    background-color: var(--cardpink);
+    position: sticky;
+    top: 20px;
+    margin-right: 0;
 }
-header, footer { z-index: 2; }
-main { z-index: 1; }
+main {
+    display: flex;
+    justify-content: center;
+}
+main {
+    width: 100%
+}
+@media (max-width: 1100px) {
+    article {
+        align-items: center;
+        flex-direction: column;
+    }
+}
