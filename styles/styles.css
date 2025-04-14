@@ -204,12 +204,6 @@ video {
 
 /* Apply.html */
 /* fieldsets */
-#state[value] {
-    option {
-        color: red;
-    }
-}
-
 fieldset {
     display: grid;
     grid-template-columns: 1fr 1fr;
