@@ -59,6 +59,7 @@ h2{
     font-family: 'apparat-thin', Verdana, sans-serif;
     font-style: normal;
     font-weight: 400;
+    scroll-margin-top: 6em; /* offset target position to prevent navbar overlaps */
 }
 img { max-width: 100%; }
 
@@ -289,7 +290,6 @@ input[type="submit"] {
 /* End Apply.html */
 
 aside {
-    border: 2px solid #251927;
     margin: 20px;              
     padding: 15px;             
     width: 25%;               
@@ -438,6 +438,7 @@ aside {
     position: sticky;
     top: 20px;
     margin-right: 0;
+    border-radius: 10px;
 }
 main {
     display: flex;
