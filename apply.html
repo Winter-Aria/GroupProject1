@@ -167,6 +167,7 @@ last modified: 25-04-05
                     </div>
                     <!-- Postcode -->
                     <div>
+                        <!-- this doesnt have a dynamic postcode system because it isnt possible to do it without java script or without ruining the user expirence -->
                         <label for="postcode">Postcode</label>
                         <input 
                             type="text" 
@@ -176,7 +177,6 @@ last modified: 25-04-05
                             pattern="\d{4}" 
                             placeholder="Postcode e.g. 0000"
                             required>
-                            
                     </div>
                 </fieldset>
                 <fieldset id="contact_fieldset">
@@ -199,7 +199,7 @@ last modified: 25-04-05
                             type="text" 
                             name="phone" 
                             id="phone" 
-                            pattern="(((\+61\s?)|0)?((\d{3})\s?){3})|(\d{4}\s?\d{4})"
+                            pattern="(((\+61\s?)|0)?((((\d{3})\s?){3})|(4\s?\d{4}\s?\d{4})))"
                             placeholder="+61 000 000 000"
                             required>
                     </div>
