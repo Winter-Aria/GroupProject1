@@ -153,10 +153,10 @@ last modified: 25-04-05
                     <!-- State -->
                     <div>
                         <label for="state">State</label>
-                        <select name="state" id="state" required>
+                        <select id="state" name="state"  required>
                             <option value="" class="select_defult" selected disabled>Select State</option>
                             <option id="sNSW" value="NSW">NSW</option>
-                            <option id="sVIC"value="VIC">VIC</option>
+                            <option id="sVIC" value="VIC">VIC</option>
                             <option id="sQLD" value="QLD">QLD</option>
                             <option id="sSA" value="SA">SA</option>
                             <option id="sWA" value="WA">WA</option>
@@ -170,6 +170,14 @@ last modified: 25-04-05
                         <!-- Each state has its own input box, that gets selected when the state option gets picked  -->
                         <!-- and there is a preset value that gets passed through if the user doesnt provide an input -->
                         <!-- this is does to fulfill the criterion that says every option bar the otherskills has to be required OR have a preset value -->
+                        <!-- placeholder postcode for display -->
+                        <label class="placeholderclass" id="placeholderlabel" for="placeholderinput">Postcode</label>
+                        <input 
+                            type="text" 
+                            id="placeholderinput"
+                            class="placeholderclass"
+                            placeholder="Please select state"
+                            disabled>
                         <!-- NSW postcode -->
                         <label id="lNSW" class="postcode" for="pNSW">Postcode</label>
                         <input 
@@ -263,7 +271,7 @@ last modified: 25-04-05
                             name="email" 
                             id="email" 
                             placeholder="Email@Address"
-                            pattern="\S+@[A-z0–9]+\.([A-z0–9]\.?)*[A-z]"
+                            pattern="\S+@[A-z0-9]+\.([A-z0-9]\.?)*[A-z]"
                             required>
                     </div>
                     <!-- Phone Number -->
