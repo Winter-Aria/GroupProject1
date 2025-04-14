@@ -170,10 +170,17 @@ last modified: 25-04-05
                         <!-- Each state has its own input box, that gets selected when the state option gets picked  -->
                         <!-- and there is a preset value that gets passed through if the user doesnt provide an input -->
                         <!-- this is does to fulfill the criterion that says every option bar the otherskills has to be required OR have a preset value -->
-                        <!-- the preset values are there to pass through the placeholder values to the server and the server can handle which one to pass through based on the selected state -->
+                        <!-- placeholder postcode for display -->
+                        <label class="placeholderclass" id="placeholderlabel" for="placeholderinput">Postcode</label>
+                        <input 
+                            type="text" 
+                            id="placeholderinput"
+                            class="placeholderclass"
+                            placeholder="Please select state"
+                            disabled>
                         <!-- NSW postcode -->
                         <label id="lNSW" class="postcode" for="pNSW">Postcode</label>
-                        <input name="NSW" vlaue="3000" hidden>
+                        <input name="NSW" value="1000" hidden>
                         <input 
                             type="text" 
                             name="NSW" 
@@ -184,7 +191,7 @@ last modified: 25-04-05
                             placeholder="1000">
                         <!-- VIC postcode -->
                         <label id="lVIC" class="postcode" for="pVIC">Postcode</label>
-                        <input name="VIC" vlaue="1000" hidden>
+                        <input name="VIC" value="3000" hidden>
                         <input 
                             type="text" 
                             name="VIC" 
@@ -195,7 +202,7 @@ last modified: 25-04-05
                             placeholder="3000">
                         <!-- QLD postcode -->
                         <label id="lQLD" class="postcode" for="pQLD">Postcode</label>
-                        <input name="QLD" vlaue="4000" hidden>
+                        <input name="QLD" value="4000" hidden>
                         <input 
                             type="text" 
                             name="QLD" 
@@ -206,7 +213,7 @@ last modified: 25-04-05
                             placeholder="4000">
                         <!-- SA postcode -->
                         <label id="lSA" class="postcode" for="pSA">Postcode</label>
-                        <input name="SA" vlaue="5000" hidden>
+                        <input name="SA" value="5000" hidden>
                         <input 
                             type="text" 
                             name="SA" 
@@ -217,7 +224,7 @@ last modified: 25-04-05
                             placeholder="5000">
                         <!-- WA postcode -->
                         <label id="lWA" class="postcode" for="pWA">Postcode</label>
-                        <input name="WA" vlaue="6000" hidden>
+                        <input name="WA" value="6000" hidden>
                         <input 
                             type="text" 
                             name="WA" 
@@ -228,7 +235,7 @@ last modified: 25-04-05
                             placeholder="6000">
                         <!-- TAS postcode -->
                         <label id="lTAS" class="postcode" for="pTAS">Postcode</label>
-                        <input name="TAS" vlaue="7000" hidden>
+                        <input name="TAS" value="7000" hidden>
                         <input 
                             type="text" 
                             name="TAS" 
@@ -239,7 +246,7 @@ last modified: 25-04-05
                             placeholder="7000">
                         <!-- NT postcode -->
                         <label id="lNT" class="postcode" for="pNT">Postcode</label>
-                        <input name="TAS" vlaue="0000" hidden>
+                        <input name="NT" value="0000" hidden>
                         <input 
                             type="text" 
                             name="NT" 
@@ -250,7 +257,7 @@ last modified: 25-04-05
                             placeholder="0000">
                         <!-- ACT postcode -->
                         <label id="lACT" class="postcode" for="pACT">Postcode</label>
-                        <input name="ACT" vlaue="0200" hidden>
+                        <input name="ACT" value="0200" hidden>
                         <input 
                             type="text" 
                             name="ACT" 
