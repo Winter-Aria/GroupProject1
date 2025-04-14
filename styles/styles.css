@@ -382,7 +382,7 @@ to allow for usability on small screens */
 }
 
 .Background_Image {
-    background-image: url(images/background_image.png);
+    background-image: url(../images/background_image.png);
     background-size: 20%;
     width: 100vw;
     height: 100vh;
