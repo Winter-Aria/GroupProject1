@@ -112,6 +112,7 @@ nav ul {
     }
 }
 
+/* navbar */
 #navbar {
     font-family: 'apparat-thin', Verdana, sans-serif;
     font-style: normal;
@@ -403,6 +404,7 @@ to allow for usability on small screens */
     }
 }
 
+/* background image*/
 .Background_Image {
     background-image: url(../images/background_image.png);
     background-size: 20%;
