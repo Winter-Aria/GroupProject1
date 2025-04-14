@@ -165,91 +165,82 @@ last modified: 25-04-05
             </div>
             <!-- Postcode -->
             <div>
-                <label for="postcode">Postcode</label>
-                <input 
-                    type="text" 
-                    name="postcode" 
-                    id="postcode" 
-                    maxlength="4" 
-                    pattern="\d{4}" 
-                    placeholder="Postcode e.g. 0000"
-                    required>
                 <!-- NSW postcode -->
-                <label for="postcode">Postcode</label>
+                <label for="NSW">Postcode</label>
                 <input 
                     type="text" 
                     name="postcode" 
-                    id="postcode" 
+                    id="NSW" 
                     maxlength="4" 
-                    pattern="\d{4}" 
-                    placeholder="Postcode e.g. 0000"
+                    pattern="(1\d{3})|(2([0-5]\d{2})|(619)|(6[2-9]\d)|([7-8]\d{2})|(92[1-9])|9[3-9]\d)" 
+                    placeholder="1000"
                     required>
                 <!-- VIC postcode -->
-                <label for="postcode">Postcode</label>
+                <label for="VIC">Postcode</label>
                 <input 
                     type="text" 
                     name="postcode" 
-                    id="postcode" 
+                    id="VIC" 
                     maxlength="4" 
-                    pattern="\d{4}" 
-                    placeholder="Postcode e.g. 0000"
+                    pattern="(3\d([0-8]\d)|(9[0-6]))|(8\d{3})" 
+                    placeholder="3000"
                     required>
                 <!-- QLD postcode -->
-                <label for="postcode">Postcode</label>
+                <label for="QLD">Postcode</label>
                 <input 
                     type="text" 
                     name="postcode" 
-                    id="postcode" 
+                    id="QLD" 
                     maxlength="4" 
-                    pattern="\d{4}" 
-                    placeholder="Postcode e.g. 0000"
+                    pattern="(4|9)(\d{3})" 
+                    placeholder="4000"
                     required>
                 <!-- SA postcode -->
-                <label for="postcode">Postcode</label>
+                <label for="SA">Postcode</label>
                 <input 
                     type="text" 
                     name="postcode" 
-                    id="postcode" 
+                    id="SA" 
                     maxlength="4" 
-                    pattern="\d{4}" 
-                    placeholder="Postcode e.g. 0000"
+                    pattern="(5\d{3})" 
+                    placeholder="5000"
                     required>
                 <!-- WA postcode -->
-                <label for="postcode">Postcode</label>
+                <label for="WA">Postcode</label>
                 <input 
                     type="text" 
                     name="postcode" 
-                    id="postcode" 
+                    id="WA" 
                     maxlength="4" 
-                    pattern="\d{4}" 
+                    pattern="(\d{4})" 
                     placeholder="Postcode e.g. 0000"
                     required>
                 <!-- TAS postcode -->
-                <label for="postcode">Postcode</label>
+                <label for="TAS">Postcode</label>
                 <input 
                     type="text" 
                     name="postcode" 
-                    id="postcode" 
+                    id="TAS" 
                     maxlength="4" 
                     pattern="\d{4}" 
                     placeholder="Postcode e.g. 0000"
                     required>
                 <!-- NT postcode -->
-                <label for="postcode">Postcode</label>
+                <label for="NT">Postcode</label>
                 <input 
                     type="text" 
                     name="postcode" 
-                    id="postcode" 
+                    id="NT" 
                     maxlength="4" 
                     pattern="\d{4}" 
                     placeholder="Postcode e.g. 0000"
                     required>
                 <!-- ACT postcode -->
-                <label for="postcode">Postcode</label>
+                <label for="ACT">Postcode</label>
                 <input 
                     type="text" 
                     name="postcode" 
-                    id="postcode" 
+                    id="ACT" 
                     maxlength="4" 
                     pattern="\d{4}" 
                     placeholder="Postcode e.g. 0000"
@@ -276,7 +267,7 @@ last modified: 25-04-05
                     type="text" 
                     name="phone" 
                     id="phone" 
-                    pattern="(((\+61\s?)|0)?((\d{3})\s?){3})|(\d{4}\s?\d{4})"
+                    pattern="(((\+61\s?)|0)?(4(\d{2})\s?)((\d{3})\s?){2})|(\d{4}\s?\d{4})"
                     placeholder="+61 000 000 000"
                     required>
             </div>
@@ -292,7 +283,7 @@ last modified: 25-04-05
             <label for="people"><input class="checkbox" type="checkbox" id="people" name="skills[]" value="people">People Skills</label>
             <label for="b_se"><input class="checkbox" type="checkbox" id="b_se" name="skills[]" value="b_se">Bachelor&apos;s in Software Engineering</label>
             <label for="network_config"><input class="checkbox" type="checkbox" id="network_config" name="skills[]" value="network_config">Network Configuration</label>
-            <label for="b_hr"><input class="checkbox" type="checkbox" id="b_hr" name="skills[]" value="b_hr">Bachelor&apos;s in Human Resources</label>
+            <label for="b_hr"><input class="checkbox" type="checkbox" id="b_hr" name="skills[]" value="b_hr">Bachelor&apos;s in Media Communications (HR) </label>
             <label for="network_troubleshooting"><input class="checkbox" type="checkbox" id="network_troubleshooting" name="skills[]" value="network_troubleshooting">Network Troubleshooting</label>
             <label for="b_ba"><input class="checkbox" type="checkbox" id="b_ba" name="skills[]" value="b_ba">Bachelor&apos;s in Business Admin</label>
             <label for="office"><input class="checkbox" type="checkbox" id="office" name="skills[]" value="office">Familiarity with Office 365</label>
