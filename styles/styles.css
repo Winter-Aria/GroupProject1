@@ -156,9 +156,9 @@ footer {
 
 /* Subheadings for the contact us page */
 .ContactPageSubheading { 
-    font-family: 'apparat-regular', Verdana, sans-serif;
+    font-family: 'apparat', Verdana, sans-serif;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 /* tile a background image across the website */
