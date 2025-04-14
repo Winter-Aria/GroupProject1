@@ -154,6 +154,13 @@ footer {
     font-size: clamp(2px, 3vw, 20px); /* responsive sizing to prevent text from covering links */
 }
 
+/* Subheadings for the contact us page */
+.ContactPageSubheading { 
+    font-family: 'apparat-regular', Verdana, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
 /* tile a background image across the website */
 .Background_Image {
     background-image: url(../images/background_image.png);
