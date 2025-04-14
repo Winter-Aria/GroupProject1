@@ -271,45 +271,73 @@ select:invalid, input[type="date"]:invalid, option:disabled {
 .postcode {
     display: none;
 }
+.placeholderclass {
+    display: inline;
+}
+/* this method was adapted from stack overflow https://stackoverflow.com/a/77108881 */
 #residency:has(#state> option[value="NSW"]:checked) {
     #pNSW, #lNSW {
       display: inline;
    }
+   .placeholderclass {
+    display: none;
+}
 }
 #residency:has(#state> option[value="VIC"]:checked) {
     #pVIC, #lVIC {
       display: inline;
    }
+   .placeholderclass {
+    display: none;
+}
 }
 #residency:has(#state> option[value="QLD"]:checked) {
     #pQLD, #lQLD {
       display: inline;
    }
+   .placeholderclass {
+    display: none;
+}
 }
 #residency:has(#state> option[value="SA"]:checked) {
     #pSA, #lSA {
       display: inline;
    }
+   .placeholderclass {
+    display: none;
+}
 }
 #residency:has(#state> option[value="WA"]:checked) {
     #pWA, #lWA {
       display: inline;
    }
+   .placeholderclass {
+    display: none;
+}
 }
 #residency:has(#state> option[value="TAS"]:checked) {
     #pTAS, #lTAS {
       display: inline;
    }
+   .placeholderclass {
+    display: none;
+}
 }
 #residency:has(#state> option[value="NT"]:checked) {
     #pNT, #lNT {
       display: inline;
    }
+   .placeholderclass {
+    display: none;
+}
 }
 #residency:has(#state> option[value="ACT"]:checked) {
     #pACT, #lACT {
       display: inline;
    }
+   .placeholderclass {
+    display: none;
+}
 }
 textarea{
     background-color: var(--pink1);
