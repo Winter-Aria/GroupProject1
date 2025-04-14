@@ -318,7 +318,10 @@ figure {
         border-radius: 10px;
         padding: 10px;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-between;font-family: 'apparat-thin', Verdana, sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: large;
     }
     dt:before {
         display: block;
@@ -422,3 +425,9 @@ to allow for usability on small screens */
     z-index: 0;
 }
 header, main, footer { z-index: 1; }
+
+.ContactPageSubheadings {
+    font-family:'apparat-thin', Verdana, sans-serif;
+    font-style: bold;
+    font-weight: 400;
+}
