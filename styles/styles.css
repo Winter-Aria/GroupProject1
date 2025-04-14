@@ -514,6 +514,7 @@ to allow for usability on small screens */
         align-items: initial;
     }
     #header-email { margin: 0; }
+    h2 { scroll-margin-top: 0; }
 }
 
 /* aside stiling tmep name */
