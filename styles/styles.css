@@ -284,7 +284,6 @@ textarea{
 
 input[type="submit"] {
     background-color: var(--dark1);
-    border-color: var(--dark1);
     color: var(--lightblue);
 }
 
