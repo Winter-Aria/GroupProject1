@@ -21,7 +21,7 @@ last modified: 25-04-06
     /* Placeholder Gray */
     --phgray: #808080;
     /* card color - light contrast against --pink1*/
-    --cardpink: rgb(219, 193, 220);
+    --cardpink: #dbc1dc;
 }
 
 /* global fonts */
