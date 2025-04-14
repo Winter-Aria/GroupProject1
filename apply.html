@@ -153,87 +153,95 @@ last modified: 25-04-05
                 <label for="state">State</label>
                 <select name="state" id="state" required>
                     <option value="" class="select_defult" selected disabled>Select State</option>
-                    <option value="NSW">NSW</option>
-                    <option value="VIC">VIC</option>
-                    <option value="QLD">QLD</option>
-                    <option value="SA">SA</option>
-                    <option value="WA">WA</option>
-                    <option value="TAS">TAS</option>
-                    <option value="NT">NT</option>
-                    <option value="ACT">ACT</option>
+                    <option id="sNSW" value="NSW">NSW</option>
+                    <option id="sVIC"value="VIC">VIC</option>
+                    <option id="sQLD" value="QLD">QLD</option>
+                    <option id="sSA" value="SA">SA</option>
+                    <option id="sWA" value="WA">WA</option>
+                    <option id="sTAS" value="TAS">TAS</option>
+                    <option id="sNT" value="NT">NT</option>
+                    <option id="sNT" value="ACT">ACT</option>
                 </select>
             </div>
             <!-- Postcode -->
             <div>
                 <!-- NSW postcode -->
-                <label for="NSW">Postcode</label>
+                <label class="postcode" for="pNSW">Postcode</label>
                 <input 
                     type="text" 
                     name="postcode" 
-                    id="NSW" 
+                    id="pNSW" 
+                    class="postcode"
                     maxlength="4" 
                     pattern="(1\d{3})|(2([0-5]\d{2})|(619)|(6[2-9]\d)|([7-8]\d{2})|(92[1-9])|9[3-9]\d)" 
                     placeholder="1000">
                 <!-- VIC postcode -->
-                <label for="VIC">Postcode</label>
+                <label class="postcode" for="pVIC">Postcode</label>
                 <input 
                     type="text" 
                     name="postcode" 
-                    id="VIC" 
+                    id="pVIC" 
+                    class="postcode"
                     maxlength="4" 
                     pattern="(3\d([0-8]\d)|(9[0-6]))|(8\d{3})" 
                     placeholder="3000">
                 <!-- QLD postcode -->
-                <label for="QLD">Postcode</label>
+                <label class="postcode" for="pQLD">Postcode</label>
                 <input 
                     type="text" 
                     name="postcode" 
-                    id="QLD" 
+                    id="pQLD" 
+                    class="postcode"
                     maxlength="4" 
                     pattern="(4|9)(\d{3})" 
                     placeholder="4000">
                 <!-- SA postcode -->
-                <label for="SA">Postcode</label>
+                <label class="postcode" for="pSA">Postcode</label>
                 <input 
                     type="text" 
                     name="postcode" 
-                    id="SA" 
+                    id="pSA" 
+                    class="postcode"
                     maxlength="4" 
                     pattern="(5\d{3})" 
                     placeholder="5000">
                 <!-- WA postcode -->
-                <label for="WA">Postcode</label>
+                <label class="postcode" for="pWA">Postcode</label>
                 <input 
                     type="text" 
                     name="postcode" 
-                    id="WA" 
+                    id="pWA" 
+                    class="postcode"
                     maxlength="4" 
                     pattern="(6([0-6]\d{2})|(7\d[0-7])|([8-9]\d{2}))" 
                     placeholder="6000">
                 <!-- TAS postcode -->
-                <label for="TAS">Postcode</label>
+                <label class="postcode" for="pTAS">Postcode</label>
                 <input 
                     type="text" 
                     name="postcode" 
-                    id="TAS" 
+                    id="pTAS" 
+                    class="postcode"
                     maxlength="4" 
                     pattern="(7\d{3})" 
                     placeholder="7000">
                 <!-- NT postcode -->
-                <label for="NT">Postcode</label>
+                <label class="postcode" for="pNT">Postcode</label>
                 <input 
                     type="text" 
                     name="postcode" 
-                    id="NT" 
+                    id="pNT" 
+                    class="postcode"
                     maxlength="4" 
                     pattern="(0[8-9]\d{2})" 
                     placeholder="0000">
                 <!-- ACT postcode -->
-                <label for="ACT">Postcode</label>
+                <label class="postcode" for="pACT">Postcode</label>
                 <input 
                     type="text" 
                     name="postcode" 
-                    id="ACT" 
+                    id="pACT" 
+                    class="postcode"
                     maxlength="4" 
                     pattern="(02\d{2})|(26(0\d)|(1[0-8]))" 
                     placeholder="0200"> 

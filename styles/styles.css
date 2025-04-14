@@ -226,9 +226,18 @@ input, select {
     padding: 1em;
     font-size: 1em;
 }
-select:invalid, input[type="date"]:invalid {
+select:invalid, input[type="date"]:invalid, option:disabled {
     color: var(--phgray);
 }
+/* Postcodes */
+.postcode {
+    display: none;
+}
+#sNSW:checked {
+    #pNSW {
+      display: inline;
+   }
+ }
 textarea{
     background-color: var(--pink1);
     border: 2px solid var(--dark2);
