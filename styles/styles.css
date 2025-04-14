@@ -374,3 +374,9 @@ to allow for usability on small screens */
     }
     #header-email { margin: 0; }
 }
+
+@media (prefers-reduced-motion) {
+    video {
+        display: none;
+    }
+}
