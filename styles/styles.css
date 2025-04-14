@@ -22,13 +22,17 @@ last modified: 25-04-06
     --phgray: #808080;
     /* card color - light contrast against --pink1*/
     --cardpink: rgb(219, 193, 220);
-}   
+}
+
+/* global fonts */
 * {
     font-family:'myriad-pro-light', Tahoma, sans-serif;
     color: var(--dark1);
     line-height: 1.6;        
     word-spacing: 0.05em; 
 }
+
+/* background colour */
 body {
     background-color:var(--pink2);
     margin: 0px;
@@ -37,7 +41,7 @@ body {
     justify-content: space-between;
     min-height: 100vh;
 }
-
+/*  */
 main{
     max-width: 800px;
     width: 100%;
@@ -376,18 +380,28 @@ details {
     cursor: pointer;
 }
 
+/* place job images to the side */
+.JobImage {
+    float: right;
+    width: 50%;
+}
+
 /* media queries to change various parts of the website
 to allow for usability on small screens */
 @media (max-width: 500px) {
     main { padding: 5px; }
     figure {
-        float:none;
+        float: right;
         width: auto;
     }
     #service_links { position:initial; }
     .JobSection {
         flex-direction: column;
-        img { width: auto; }
+        img {
+            width: auto; 
+            float: none;
+
+        }
         div { max-width: none; }
     }
     #header-logo { display: none; }
@@ -398,13 +412,6 @@ to allow for usability on small screens */
     #header-email { margin: 0; }
 }
 
-@media (prefers-reduced-motion) {
-    video {
-        display: none;
-    }
-}
-
-/* background image*/
 .Background_Image {
     background-image: url(../images/background_image.png);
     background-size: 20%;
