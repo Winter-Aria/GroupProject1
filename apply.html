@@ -125,7 +125,7 @@ last modified: 25-04-05
                     </div>
                     </fieldset>
                 </fieldset>
-                <fieldset>
+                <fieldset id="residency">
                     <!-- Applicant residency details -->
                     <legend>Residency:</legend>
                     <!-- Street Address -->
@@ -155,28 +155,101 @@ last modified: 25-04-05
                         <label for="state">State</label>
                         <select name="state" id="state" required>
                             <option value="" class="select_defult" selected disabled>Select State</option>
-                            <option value="VIC">VIC</option>
-                            <option value="NSW">NSW</option>
-                            <option value="QLD">QLD</option>
-                            <option value="NT">NT</option>
-                            <option value="WA">WA</option>
-                            <option value="SA">SA</option>
-                            <option value="TAS">TAS</option>
-                            <option value="ACT">ACT</option>
+                            <option id="sNSW" value="NSW">NSW</option>
+                            <option id="sVIC"value="VIC">VIC</option>
+                            <option id="sQLD" value="QLD">QLD</option>
+                            <option id="sSA" value="SA">SA</option>
+                            <option id="sWA" value="WA">WA</option>
+                            <option id="sTAS" value="TAS">TAS</option>
+                            <option id="sNT" value="NT">NT</option>
+                            <option id="sNT" value="ACT">ACT</option>
                         </select>
                     </div>
                     <!-- Postcode -->
                     <div>
-                        <!-- this doesnt have a dynamic postcode system because it isnt possible to do it without java script or without ruining the user expirence -->
-                        <label for="postcode">Postcode</label>
+                        <!-- Each state has its own input box, that gets selected when the state option gets picked  -->
+                        <!-- and there is a preset value that gets passed through if the user doesnt provide an input -->
+                        <!-- this is does to fulfill the criterion that says every option bar the otherskills has to be required OR have a preset value -->
+                        <!-- NSW postcode -->
+                        <label id="lNSW" class="postcode" for="pNSW">Postcode</label>
                         <input 
                             type="text" 
                             name="postcode" 
-                            id="postcode" 
+                            id="pNSW" 
+                            class="postcode"
                             maxlength="4" 
-                            pattern="\d{4}" 
-                            placeholder="Postcode e.g. 0000"
-                            required>
+                            pattern="(1\d{3})|(2([0-5]\d{2})|(619)|(6[2-9]\d)|([7-8]\d{2})|(92[1-9])|9[3-9]\d)" 
+                            placeholder="1000">
+                        <!-- VIC postcode -->
+                        <label id="lVIC" class="postcode" for="pVIC">Postcode</label>
+                        <input 
+                            type="text" 
+                            name="postcode" 
+                            id="pVIC" 
+                            class="postcode"
+                            maxlength="4" 
+                            pattern="(3\d([0-8]\d)|(9[0-6]))|(8\d{3})" 
+                            placeholder="3000">
+                        <!-- QLD postcode -->
+                        <label id="lQLD" class="postcode" for="pQLD">Postcode</label>
+                        <input 
+                            type="text" 
+                            name="postcode" 
+                            id="pQLD" 
+                            class="postcode"
+                            maxlength="4" 
+                            pattern="(4|9)(\d{3})" 
+                            placeholder="4000">
+                        <!-- SA postcode -->
+                        <label id="lSA" class="postcode" for="pSA">Postcode</label>
+                        <input 
+                            type="text" 
+                            name="postcode" 
+                            id="pSA" 
+                            class="postcode"
+                            maxlength="4" 
+                            pattern="(5\d{3})" 
+                            placeholder="5000">
+                        <!-- WA postcode -->
+                        <label id="lWA" class="postcode" for="pWA">Postcode</label>
+                        <input 
+                            type="text" 
+                            name="postcode" 
+                            id="pWA" 
+                            class="postcode"
+                            maxlength="4" 
+                            pattern="(6([0-6]\d{2})|(7\d[0-7])|([8-9]\d{2}))" 
+                            placeholder="6000">
+                        <!-- TAS postcode -->
+                        <label id="lTAS" class="postcode" for="pTAS">Postcode</label>
+                        <input 
+                            type="text" 
+                            name="postcode" 
+                            id="pTAS" 
+                            class="postcode"
+                            maxlength="4" 
+                            pattern="(7\d{3})" 
+                            placeholder="7000">
+                        <!-- NT postcode -->
+                        <label id="lNT" class="postcode" for="pNT">Postcode</label>
+                        <input 
+                            type="text" 
+                            name="postcode" 
+                            id="pNT" 
+                            class="postcode"
+                            maxlength="4" 
+                            pattern="(0[8-9]\d{2})" 
+                            placeholder="0000">
+                        <!-- ACT postcode -->
+                        <label id="lACT" class="postcode" for="pACT">Postcode</label>
+                        <input 
+                            type="text" 
+                            name="postcode" 
+                            id="pACT" 
+                            class="postcode"
+                            maxlength="4" 
+                            pattern="(02\d{2})|(26(0\d)|(1[0-8]))" 
+                            placeholder="0200"> 
                     </div>
                 </fieldset>
                 <fieldset id="contact_fieldset">
@@ -190,7 +263,6 @@ last modified: 25-04-05
                             name="email" 
                             id="email" 
                             placeholder="Email@Address"
-                            pattern="\S+@[A-z0–9]+\.([A-z0–9]\.?)*[A-z]"
                             required>
                     </div>
                     <!-- Phone Number -->
@@ -200,7 +272,7 @@ last modified: 25-04-05
                             type="text" 
                             name="phone" 
                             id="phone" 
-                            pattern="(((\+61\s?)|0)?((((\d{3})\s?){3})|(4\s?\d{4}\s?\d{4})))"
+                            pattern="(((\+61\s?)|0)?(4(\d{2})\s?)((\d{3})\s?){2})|((0?4\s)?(\d{4}\s?\d{4}))"
                             placeholder="+61 000 000 000"
                             required>
                     </div>
@@ -216,7 +288,7 @@ last modified: 25-04-05
                     <label for="people"><input class="checkbox" type="checkbox" id="people" name="skills[]" value="people">People Skills</label>
                     <label for="b_se"><input class="checkbox" type="checkbox" id="b_se" name="skills[]" value="b_se">Bachelor&apos;s in Software Engineering</label>
                     <label for="network_config"><input class="checkbox" type="checkbox" id="network_config" name="skills[]" value="network_config">Network Configuration</label>
-                    <label for="b_hr"><input class="checkbox" type="checkbox" id="b_hr" name="skills[]" value="b_hr">Bachelor&apos;s in Human Resources</label>
+                    <label for="b_hr"><input class="checkbox" type="checkbox" id="b_hr" name="skills[]" value="b_hr">Bachelor&apos;s in Media Communications (HR) </label>
                     <label for="network_troubleshooting"><input class="checkbox" type="checkbox" id="network_troubleshooting" name="skills[]" value="network_troubleshooting">Network Troubleshooting</label>
                     <label for="b_ba"><input class="checkbox" type="checkbox" id="b_ba" name="skills[]" value="b_ba">Bachelor&apos;s in Business Admin</label>
                     <label for="office"><input class="checkbox" type="checkbox" id="office" name="skills[]" value="office">Familiarity with Office 365</label>

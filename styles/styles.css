@@ -264,8 +264,52 @@ input, select {
     padding: 1em;
     font-size: 1em;
 }
-select:invalid, input[type="date"]:invalid {
+select:invalid, input[type="date"]:invalid, option:disabled {
     color: var(--phgray);
+}
+/* Postcodes */
+.postcode {
+    display: none;
+}
+#residency:has(#state> option[value="NSW"]:checked) {
+    #pNSW, #lNSW {
+      display: inline;
+   }
+}
+#residency:has(#state> option[value="VIC"]:checked) {
+    #pVIC, #lVIC {
+      display: inline;
+   }
+}
+#residency:has(#state> option[value="QLD"]:checked) {
+    #pQLD, #lQLD {
+      display: inline;
+   }
+}
+#residency:has(#state> option[value="SA"]:checked) {
+    #pSA, #lSA {
+      display: inline;
+   }
+}
+#residency:has(#state> option[value="WA"]:checked) {
+    #pWA, #lWA {
+      display: inline;
+   }
+}
+#residency:has(#state> option[value="TAS"]:checked) {
+    #pTAS, #lTAS {
+      display: inline;
+   }
+}
+#residency:has(#state> option[value="NT"]:checked) {
+    #pNT, #lNT {
+      display: inline;
+   }
+}
+#residency:has(#state> option[value="ACT"]:checked) {
+    #pACT, #lACT {
+      display: inline;
+   }
 }
 textarea{
     background-color: var(--pink1);
