@@ -274,6 +274,7 @@ select:invalid, input[type="date"]:invalid, option:disabled {
 .placeholderclass {
     display: inline;
 }
+/* this method was adapted from stack overflow https://stackoverflow.com/a/77108881 */
 #residency:has(#state> option[value="NSW"]:checked) {
     #pNSW, #lNSW {
       display: inline;
